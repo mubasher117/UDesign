@@ -1,0 +1,7 @@
+C:\Users\MS\source\repos\Server\Server\bin\Server.dll.config
+C:\Users\MS\source\repos\Server\Server\bin\Server.dll
+C:\Users\MS\source\repos\Server\Server\bin\Server.pdb
+C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.dll
+C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.pdb
