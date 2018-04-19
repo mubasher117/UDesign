@@ -1,0 +1,11 @@
+C:\Users\MS\source\repos\Client\Client\bin\Debug\Client.exe.config
+C:\Users\MS\source\repos\Client\Client\bin\Debug\Client.exe
+C:\Users\MS\source\repos\Client\Client\bin\Debug\Client.pdb
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.Login.resources
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.Register.resources
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.exe
+C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.pdb
