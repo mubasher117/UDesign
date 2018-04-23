@@ -5,3 +5,10 @@ C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.csprojResolveAssemblyRef
 C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.dll
 C:\Users\MS\source\repos\Server\Server\obj\Debug\Server.pdb
+D:\UDesign\Server\Server\bin\Server.dll.config
+D:\UDesign\Server\Server\bin\Server.dll
+D:\UDesign\Server\Server\bin\Server.pdb
+D:\UDesign\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\UDesign\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\UDesign\Server\Server\obj\Debug\Server.dll
+D:\UDesign\Server\Server\obj\Debug\Server.pdb

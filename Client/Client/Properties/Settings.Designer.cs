@@ -26,7 +26,7 @@ namespace Client.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.10.6:50332/Server.svc")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.10.7:50332/Server.svc")]
         public string Client_WebReference_Service1 {
             get {
                 return ((string)(this["Client_WebReference_Service1"]));

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Web;
 using System.Web.Services;
-using Client.WebReference;
+using Client.WebReferenceBroadband;
 
 namespace Client
 {

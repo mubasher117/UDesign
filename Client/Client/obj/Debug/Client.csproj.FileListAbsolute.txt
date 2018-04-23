@@ -9,3 +9,14 @@ C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.csproj.GenerateResource.
 C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.exe
 C:\Users\MS\source\repos\Client\Client\obj\Debug\Client.pdb
+D:\UDesign\Client\Client\bin\Debug\Client.exe.config
+D:\UDesign\Client\Client\bin\Debug\Client.exe
+D:\UDesign\Client\Client\bin\Debug\Client.pdb
+D:\UDesign\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\UDesign\Client\Client\obj\Debug\Client.Login.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Register.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\UDesign\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\UDesign\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\UDesign\Client\Client\obj\Debug\Client.exe
+D:\UDesign\Client\Client\obj\Debug\Client.pdb
