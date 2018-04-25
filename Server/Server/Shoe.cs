@@ -11,6 +11,7 @@ namespace Server
         private string sole;
         private string mainColor;
         private string sideColor;
+        private bool laces = false;
         private string brand;
         private Image logo;
 
@@ -19,5 +20,32 @@ namespace Server
         public string SideColor { get => sideColor; set => sideColor = value; }
         public string Brand { get => brand; set => brand = value; }
         public Image Logo { get => logo; set => logo = value; }
+        public bool Laces { get => laces; set => laces = value; }
+
+        public Image AddTemp(Image image)
+        {
+            return image;
+        }
+        public void AddSole(string sole)
+        {
+            this.sole = sole;
+        }
+        public void AddLace()
+        {
+            this.laces = true;
+        }
+        public void AddColor(string mcolor, string scolor)
+        {
+            this.mainColor = mcolor;
+            this.sideColor = scolor;
+        }
+        public void AddLogo(Image logo)
+        {
+            this.logo = logo;
+        }
+        public void AddBrand(string brand)
+        {
+            this.brand = brand;
+        }
     }
 }
