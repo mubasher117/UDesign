@@ -65,10 +65,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brand.cs" />
-    <Compile Include="BrandDL.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DesignDL.cs" />
+    <Compile Include="Designer.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="PreCustomized.cs" />
     <Compile Include="Server.svc.cs">
       <DependentUpon>Server.svc</DependentUpon>
     </Compile>
