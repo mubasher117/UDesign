@@ -7,16 +7,6 @@ namespace Server
 {
     public class OrderDL
     {
-
-        public static List<Order> orders = new List<Order>();
-
-        public void AddToCArt(Order purchase)
-        {
-            orders.Add(purchase);
-        }
-        public List<Order> DownloadOrdersList()
-        {
-            return orders;
-        }
+        public static List<Shoe> orders = new List<Shoe>();
     }
 }
