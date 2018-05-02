@@ -8,6 +8,7 @@ namespace Server
     public class UserDL
     {
         public static List<User> Users = new List<User>();
+
     }
 
 
