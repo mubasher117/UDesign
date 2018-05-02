@@ -38,6 +38,9 @@ namespace Client
             Login login = new Login();
             login.Show();
             this.Hide();
+
+
+            //Daim
         }
 
         private void Register_Load(object sender, EventArgs e)
