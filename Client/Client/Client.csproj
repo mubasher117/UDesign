@@ -61,12 +61,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web References\WebReferenceZong\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\WebReferenceBroadband\Reference.cs">
+    <Compile Include="Web References\localhost\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -95,40 +90,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Web References\WebReferenceBroadband\CompositeType1.datasource">
+    <None Include="Web References\localhost\CompositeType.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
-    <None Include="Web References\WebReferenceZong\CompositeType1.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\WebReferenceZong\Reference.map">
+    <None Include="Web References\localhost\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Web References\WebReferenceZong\Server.xsd">
+    <None Include="Web References\localhost\Server.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WebReferenceZong\Server0.xsd">
+    <None Include="Web References\localhost\Server0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WebReferenceZong\Server1.xsd">
+    <None Include="Web References\localhost\Server1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WebReferenceZong\Service1.wsdl" />
-    <None Include="Web References\WebReferenceBroadband\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\WebReferenceBroadband\Server.xsd">
+    <None Include="Web References\localhost\Server2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\WebReferenceBroadband\Server0.xsd">
-      <SubType>Designer</SubType>
+    <None Include="Web References\localhost\Service1.wsdl" />
+    <None Include="Web References\localhost\Shoe.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
     </None>
-    <None Include="Web References\WebReferenceBroadband\Server1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\WebReferenceBroadband\Service1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -140,34 +124,20 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://192.168.10.6:50332/Server.svc">
+    <WebReferenceUrl Include="http://localhost:50332/Server.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\WebReferenceZong\</RelPath>
-      <UpdateFromURL>http://192.168.10.6:50332/Server.svc</UpdateFromURL>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:50332/Server.svc</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Client_WebReference_Service1</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="http://192.168.10.7:50332/Server.svc">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\WebReferenceBroadband\</RelPath>
-      <UpdateFromURL>http://192.168.10.7:50332/Server.svc</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Client_WebReference_Service1</CachedSettingsPropName>
+      <CachedSettingsPropName>Client_localhost_Service1</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\WebReferenceZong\Server.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Web References\WebReferenceBroadband\Server.disco" />
+    <None Include="Web References\localhost\Server.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

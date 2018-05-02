@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Client.WebReferenceBroadband;
+using Client.localhost;
+
 
 namespace Client
 {
     public partial class Login : Form
     {
-        public Login()
+        private Login()
         {
             InitializeComponent();
         }
@@ -29,26 +30,46 @@ namespace Client
             Service1 s = new Service1();
             bool valid;
             bool check;
-            s.Isvalid(txtUsernsme.Text, txtPassword.Text, out valid, out check);
-            if (valid)
+            if (rbtnDesigner.Checked)
             {
-                MessageBox.Show("logged in");
+                s.LoginDesigner(txtUsernsme.Text, txtPassword.Text, out valid, out check);
+                if (valid)
+                {
+                    MessageBox.Show("logged in");
+                    DesignUpload d = DesignUpload.GetInstance();
+                    d.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("invalid");
+                }
             }
-            else
+            else if (rbtnAdmin.Checked)
             {
+                s.LoginAdmin(txtUsernsme.Text, txtPassword.Text, out valid, out check);
+                if (valid)
+                {
+                    MessageBox.Show("logged in");
+                    Admin d = Admin.GetInstance();
+                    d.Show();
+                    this.Hide();
 
+                }
+                else
+                {
+                    MessageBox.Show("invalid");
+                }
 
-
-
-                MessageBox.Show("invalid");
             }
+
         }
 
-        private void lnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lnkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-            Register r = new Register();
-            r.Show();
+            Home h = Home.GetInstance();
+            h.Show();
             this.Hide();
         }
     }
