@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Web;
 using System.Web.Services;
-using Client.WebReferenceBroadband;
 
 namespace Client
 {
@@ -24,8 +23,8 @@ namespace Client
         {
 
 
-            Service1 service = new Service1();
-            service.Register(txtUsername.Text, txtPassword.Text);
+            //Service1 service = new Service1();
+            //service.Register(txtUsername.Text, txtPassword.Text);
             MessageBox.Show("registered");
 
 
@@ -35,8 +34,8 @@ namespace Client
 
         private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            //Login login = new Login();
+            //login.Show();
             this.Hide();
 
 
