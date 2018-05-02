@@ -11,11 +11,12 @@ namespace Server
         private string name;
         private string address;
         private DateTime deliveryDate;
-        private Image design;
+        private Shoe shoe;
+
 
         public string Name { get => name; set => name = value; }
         public string Adress { get => address; set => address = value; }
         public DateTime DeliveryDate { get => deliveryDate; set => deliveryDate = value; }
-        public Image Design { get => design; set => design = value; }
+        public Shoe Shoe { get => shoe; set => shoe = value; }
     }
 }

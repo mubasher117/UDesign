@@ -9,7 +9,6 @@ namespace Server
     {
 
         public static List<string> colors = new List<string>();
-        public static List<Brand> brands = new List<Brand>();
 
     }
 }

@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Drawing;
+using System.Collections;
 
 namespace Server
 {
@@ -23,11 +25,22 @@ namespace Server
 
         [OperationContract]
         void Register(string name, string pass);
+        [OperationContract]
+        bool LoginDesigner(string name, string pass);
+        [OperationContract]
+        bool LoginAdmin(string name, string pass);
+        [OperationContract]
+        void AddDesignInDL(Image img);
 
         [OperationContract]
-        bool Isvalid(string name, string pass);
+        void AddShoe(string m, string s, string b, string l);
 
-
+        [OperationContract]
+        List<Shoe> GetOrdersList();
+        [OperationContract]
+        void SetStatus(string m, string s, string b, string l);
+        [OperationContract]
+        string ShowShoeStatus(string m, string s, string b, string l);
 
 
     }

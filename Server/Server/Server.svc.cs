@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Drawing;
+using System.Collections;
 
 namespace Server
 {
@@ -39,21 +41,78 @@ namespace Server
             UserDL.Users.Add(u);
         }
 
-        public bool Isvalid(string name,string pass)
-        {
 
-            foreach (User user in UserDL.Users)
+        public bool LoginDesigner(string name, string pass)
+        {
+            Designer d = new Designer();
+            if (name == d.Name && pass == d.Password)
             {
-                if (user.Username == name && user.Password == pass)
-                {
-                    return true;
-                }
+                return true;
             }
             return false;
 
         }
-        
-        
+        public bool LoginAdmin(string name, string pass)
+        {
+            Admin a = new Admin();
+            if (name == a.Name && pass == a.Password)
+            {
+                return true;
+            }
+            return false;
+
+        }
+
+        public void AddDesignInDL(System.Drawing.Image img)
+        {
+            DesignDL.designs.Add(img);
+        }
+
+       public void AddShoe(string m, string s, string b, string l)
+        {
+            Shoe sh = new Shoe();
+            sh.MainColor = m;
+            sh.SideColor = s;
+            sh.Brand = b;
+            sh.Laces = l;
+            sh.Status = "Unapproved";
+
+            OrderDL.orders.Add(sh);
+
+
+        }
+
+        public List<Shoe> GetOrdersList()
+        {
+            return OrderDL.orders;
+        }
+
+        public string ShowShoeStatus(string m, string s, string b, string l)
+        {
+             
+            foreach (Shoe shoe in OrderDL.orders)
+            {
+                if (shoe.MainColor == m && shoe.SideColor == s && shoe.Brand == b && shoe.Laces == l )
+                {
+                    return shoe.Status;
+                }
+            }
+            
+            {
+                return "staus not found";
+            }
+        }
+
+        public void SetStatus(string m, string s, string b, string l)
+        {
+            foreach (Shoe shoe in OrderDL.orders)
+            {
+                if (shoe.MainColor == m && shoe.SideColor == s && shoe.Brand == b && shoe.Laces == l)
+                {
+                    shoe.Status = "Approved";
+                }
+            }
+        }
 
 
     }
