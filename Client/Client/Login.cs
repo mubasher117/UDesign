@@ -18,6 +18,16 @@ namespace Client
         {
             InitializeComponent();
         }
+        private static Login L = null;
+
+        public static Login GetInstance()
+        {
+            if (L == null)
+            {
+                return new Login();
+            }
+            return L;
+        }
 
         private void Login_Load(object sender, EventArgs e)
         {

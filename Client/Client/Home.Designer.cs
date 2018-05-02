@@ -171,6 +171,7 @@
             this.Controls.Add(this.lnkPreCustomized);
             this.Name = "Home";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.gbHomeButtons.ResumeLayout(false);
             this.gbHomeButtons.PerformLayout();
             this.ResumeLayout(false);

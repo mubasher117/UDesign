@@ -36,5 +36,10 @@ namespace Client
         {
 
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customize.Designer.cs">
+      <DependentUpon>Customize.cs</DependentUpon>
+    </Compile>
     <Compile Include="Designer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Customize.resx">
+      <DependentUpon>Customize.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Designer.resx">
       <DependentUpon>Designer.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,6 +184,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\localhost\Server.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeAquaFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBlack.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBlackFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBlue.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBlueFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBrown.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeBrownFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeGrayFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeGreen.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeGreenFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeGrey.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeOrange.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeOrangeFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoePink.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoePinkFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeRed.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeRedFront.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeSky.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeTemplate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeTemplateFront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeYellow.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoeYellowFront.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
