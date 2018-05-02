@@ -12,6 +12,7 @@ namespace Server
         private string mainColor;
         private string sideColor;
         private bool laces = false;
+
         private string brand;
         private Image logo;
 
