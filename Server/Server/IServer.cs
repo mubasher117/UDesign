@@ -46,6 +46,10 @@ namespace Server
         int GenerateId();
         [OperationContract]
         void PlaceOrder(Order o);
+        [OperationContract]
+        Complaint CreateComplaint();
+        [OperationContract]
+        void AddComplaint(Complaint c);
 
     }
 

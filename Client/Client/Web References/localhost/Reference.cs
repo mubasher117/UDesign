@@ -51,6 +51,10 @@ namespace Client.localhost {
         
         private System.Threading.SendOrPostCallback PlaceOrderOperationCompleted;
         
+        private System.Threading.SendOrPostCallback CreateComplaintOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback CCOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -121,6 +125,12 @@ namespace Client.localhost {
         
         /// <remarks/>
         public event PlaceOrderCompletedEventHandler PlaceOrderCompleted;
+        
+        /// <remarks/>
+        public event CreateComplaintCompletedEventHandler CreateComplaintCompleted;
+        
+        /// <remarks/>
+        public event CCCompletedEventHandler CCCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -460,6 +470,62 @@ namespace Client.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/CreateComplaint", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Complaint CreateComplaint() {
+            object[] results = this.Invoke("CreateComplaint", new object[0]);
+            return ((Complaint)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CreateComplaintAsync() {
+            this.CreateComplaintAsync(null);
+        }
+        
+        /// <remarks/>
+        public void CreateComplaintAsync(object userState) {
+            if ((this.CreateComplaintOperationCompleted == null)) {
+                this.CreateComplaintOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateComplaintOperationCompleted);
+            }
+            this.InvokeAsync("CreateComplaint", new object[0], this.CreateComplaintOperationCompleted, userState);
+        }
+        
+        private void OnCreateComplaintOperationCompleted(object arg) {
+            if ((this.CreateComplaintCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateComplaintCompleted(this, new CreateComplaintCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/CC", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public ComplainDL CC() {
+            object[] results = this.Invoke("CC", new object[0]);
+            return ((ComplainDL)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CCAsync() {
+            this.CCAsync(null);
+        }
+        
+        /// <remarks/>
+        public void CCAsync(object userState) {
+            if ((this.CCOperationCompleted == null)) {
+                this.CCOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCCOperationCompleted);
+            }
+            this.InvokeAsync("CC", new object[0], this.CCOperationCompleted, userState);
+        }
+        
+        private void OnCCOperationCompleted(object arg) {
+            if ((this.CCCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CCCompleted(this, new CCCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -521,6 +587,76 @@ namespace Client.localhost {
             }
             set {
                 this.stringValueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+    public partial class ComplainDL {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+    public partial class Complaint {
+        
+        private string cnameField;
+        
+        private string complaintTextField;
+        
+        private string emailField;
+        
+        private string mnoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Cname {
+            get {
+                return this.cnameField;
+            }
+            set {
+                this.cnameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ComplaintText {
+            get {
+                return this.complaintTextField;
+            }
+            set {
+                this.complaintTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Mno {
+            get {
+                return this.mnoField;
+            }
+            set {
+                this.mnoField = value;
             }
         }
     }
@@ -962,6 +1098,58 @@ namespace Client.localhost {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
     public delegate void PlaceOrderCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void CreateComplaintCompletedEventHandler(object sender, CreateComplaintCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateComplaintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateComplaintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Complaint Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Complaint)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void CCCompletedEventHandler(object sender, CCCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CCCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CCCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ComplainDL Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ComplainDL)(this.results[0]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

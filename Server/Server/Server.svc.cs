@@ -125,5 +125,14 @@ namespace Server
             OrderDL.orders.Add(o);
         }
 
+        public Complaint CreateComplaint()
+        {
+            Complaint c = new Complaint();
+            return c;
+        }
+        public void AddComplaint(Complaint c)
+        {
+            ComplainDL.complaints.Add(c);
+        }
     }
 }

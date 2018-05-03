@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="ComplainDL.cs" />
+    <Compile Include="Complaint.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="DesignDL.cs" />
     <Compile Include="Designer.cs" />

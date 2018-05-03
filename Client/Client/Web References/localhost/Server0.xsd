@@ -152,4 +152,28 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="CreateComplaint">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateComplaintResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="CreateComplaintResult" nillable="true" type="q7:Complaint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CC">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="CCResult" nillable="true" type="q8:ComplainDL" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
