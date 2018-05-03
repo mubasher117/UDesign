@@ -42,7 +42,10 @@ namespace Server
         string ShowShoeStatus(string m, string s, string b, string l);
         [OperationContract]
         Order CreateaOrder();
-
+        [OperationContract]
+        int GenerateId();
+        [OperationContract]
+        void PlaceOrder(Order o);
 
     }
 

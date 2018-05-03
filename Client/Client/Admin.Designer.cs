@@ -79,6 +79,7 @@
             this.lnkHome.TabIndex = 12;
             this.lnkHome.TabStop = true;
             this.lnkHome.Text = "Home";
+            this.lnkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHome_LinkClicked);
             // 
             // btnComplaints
             // 

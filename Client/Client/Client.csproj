@@ -196,9 +196,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\localhost\Service1.wsdl" />
-    <None Include="Web References\localhost\Shoe.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

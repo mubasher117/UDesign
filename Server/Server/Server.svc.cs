@@ -112,6 +112,18 @@ namespace Server
             return o;
         }
 
+        public int GenerateId()
+        {
+            int id  = OrderDL.MaxId;
+            OrderDL.MaxId += 1;
+            return id;
+
+        }
+
+        public void PlaceOrder(Order o)
+        {
+            OrderDL.orders.Add(o);
+        }
 
     }
 }

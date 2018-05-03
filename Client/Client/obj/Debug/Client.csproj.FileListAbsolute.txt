@@ -14,7 +14,6 @@ D:\UDesign\Client\Client\bin\Debug\Client.exe
 D:\UDesign\Client\Client\bin\Debug\Client.pdb
 D:\UDesign\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 D:\UDesign\Client\Client\obj\Debug\Client.Login.resources
-D:\UDesign\Client\Client\obj\Debug\Client.Register.resources
 D:\UDesign\Client\Client\obj\Debug\Client.Properties.Resources.resources
 D:\UDesign\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
 D:\UDesign\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
@@ -39,3 +38,13 @@ C:\Users\mubas\Desktop\UDesign\Client\Client\obj\Debug\Client.pdb
 C:\Users\mubas\Desktop\UDesign\Client\Client\bin\Debug\Client.exe.config
 C:\Users\mubas\Desktop\UDesign\Client\Client\bin\Debug\Client.exe
 C:\Users\mubas\Desktop\UDesign\Client\Client\bin\Debug\Client.pdb
+D:\UDesign\Client\Client\obj\Debug\Client.Admin.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Customize.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Designer.resources
+D:\UDesign\Client\Client\obj\Debug\Client.DesignerCreate.resources
+D:\UDesign\Client\Client\obj\Debug\Client.DesignerDesign.resources
+D:\UDesign\Client\Client\obj\Debug\Client.DesignerUpload.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Home.resources
+D:\UDesign\Client\Client\obj\Debug\Client.Orders.resources
+D:\UDesign\Client\Client\obj\Debug\Client.ucDUpload.resources
+D:\UDesign\Client\Client\obj\Debug\Client.UserInfo.resources

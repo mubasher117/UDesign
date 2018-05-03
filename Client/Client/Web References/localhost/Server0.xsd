@@ -30,19 +30,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Register">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="pass" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="RegisterResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
   <xs:element name="LoginDesigner">
     <xs:complexType>
       <xs:sequence>
@@ -108,23 +95,8 @@
   <xs:element name="GetOrdersListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="GetOrdersListResult" nillable="true" type="q4:ArrayOfShoe" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="GetOrdersListResult" nillable="true" type="q4:ArrayOfOrder" />
       </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="SetStatus">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="m" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="s" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="b" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="l" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="SetStatusResponse">
-    <xs:complexType>
-      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="ShowShoeStatus">
@@ -144,28 +116,40 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="CreateOrder">
+  <xs:element name="CreateaOrder">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="CreateOrderResponse">
+  <xs:element name="CreateaOrderResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="CreateOrderResult" nillable="true" type="q5:Order" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="CreateaOrderResult" nillable="true" type="q5:Order" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetOrderList">
+  <xs:element name="GenerateId">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetOrderListResponse">
+  <xs:element name="GenerateIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="GetOrderListResult" nillable="true" type="q6:ArrayOfShoe" />
+        <xs:element minOccurs="0" name="GenerateIdResult" type="xs:int" />
       </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlaceOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="o" nillable="true" type="q6:Order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlaceOrderResponse">
+    <xs:complexType>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
 </xs:schema>

@@ -87,6 +87,7 @@
             this.lnkHome.TabIndex = 12;
             this.lnkHome.TabStop = true;
             this.lnkHome.Text = "Home";
+            this.lnkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHome_LinkClicked);
             // 
             // lnkAddComplaint
             // 
@@ -133,7 +134,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(131, 239);
+            this.lblAddress.Location = new System.Drawing.Point(118, 222);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(64, 17);
@@ -143,7 +144,7 @@
             // lblCNIC
             // 
             this.lblCNIC.AutoSize = true;
-            this.lblCNIC.Location = new System.Drawing.Point(129, 198);
+            this.lblCNIC.Location = new System.Drawing.Point(118, 179);
             this.lblCNIC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCNIC.Name = "lblCNIC";
             this.lblCNIC.Size = new System.Drawing.Size(43, 17);
@@ -153,7 +154,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(118, 138);
+            this.lblUsername.Location = new System.Drawing.Point(118, 135);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(77, 17);
@@ -178,7 +179,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(242, 138);
+            this.txtUsername.Location = new System.Drawing.Point(242, 135);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(152, 22);

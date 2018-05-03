@@ -7,21 +7,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
-  <xs:complexType name="ArrayOfShoe">
+  <xs:complexType name="ArrayOfOrder">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Shoe" nillable="true" type="tns:Shoe" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfShoe" nillable="true" type="tns:ArrayOfShoe" />
-  <xs:complexType name="Shoe">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Brand" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Laces" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="MainColor" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="SideColor" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Shoe" nillable="true" type="tns:Shoe" />
+  <xs:element name="ArrayOfOrder" nillable="true" type="tns:ArrayOfOrder" />
   <xs:complexType name="Order">
     <xs:sequence>
       <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
@@ -32,4 +23,13 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Order" nillable="true" type="tns:Order" />
+  <xs:complexType name="Shoe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Brand" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Laces" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MainColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SideColor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Shoe" nillable="true" type="tns:Shoe" />
 </xs:schema>

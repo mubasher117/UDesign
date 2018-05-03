@@ -20,12 +20,6 @@
   <wsdl:message name="IServer_GetDataUsingDataContract_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
   </wsdl:message>
-  <wsdl:message name="IServer_Register_InputMessage">
-    <wsdl:part name="parameters" element="tns:Register" />
-  </wsdl:message>
-  <wsdl:message name="IServer_Register_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterResponse" />
-  </wsdl:message>
   <wsdl:message name="IServer_LoginDesigner_InputMessage">
     <wsdl:part name="parameters" element="tns:LoginDesigner" />
   </wsdl:message>
@@ -56,29 +50,29 @@
   <wsdl:message name="IServer_GetOrdersList_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOrdersListResponse" />
   </wsdl:message>
-  <wsdl:message name="IServer_SetStatus_InputMessage">
-    <wsdl:part name="parameters" element="tns:SetStatus" />
-  </wsdl:message>
-  <wsdl:message name="IServer_SetStatus_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SetStatusResponse" />
-  </wsdl:message>
   <wsdl:message name="IServer_ShowShoeStatus_InputMessage">
     <wsdl:part name="parameters" element="tns:ShowShoeStatus" />
   </wsdl:message>
   <wsdl:message name="IServer_ShowShoeStatus_OutputMessage">
     <wsdl:part name="parameters" element="tns:ShowShoeStatusResponse" />
   </wsdl:message>
-  <wsdl:message name="IServer_CreateOrder_InputMessage">
-    <wsdl:part name="parameters" element="tns:CreateOrder" />
+  <wsdl:message name="IServer_CreateaOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateaOrder" />
   </wsdl:message>
-  <wsdl:message name="IServer_CreateOrder_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CreateOrderResponse" />
+  <wsdl:message name="IServer_CreateaOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateaOrderResponse" />
   </wsdl:message>
-  <wsdl:message name="IServer_GetOrderList_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetOrderList" />
+  <wsdl:message name="IServer_GenerateId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateId" />
   </wsdl:message>
-  <wsdl:message name="IServer_GetOrderList_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetOrderListResponse" />
+  <wsdl:message name="IServer_GenerateId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServer_PlaceOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlaceOrder" />
+  </wsdl:message>
+  <wsdl:message name="IServer_PlaceOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlaceOrderResponse" />
   </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
@@ -88,10 +82,6 @@
     <wsdl:operation name="GetDataUsingDataContract">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetDataUsingDataContract" message="tns:IServer_GetDataUsingDataContract_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetDataUsingDataContractResponse" message="tns:IServer_GetDataUsingDataContract_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="Register">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServer/Register" message="tns:IServer_Register_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServer/RegisterResponse" message="tns:IServer_Register_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="LoginDesigner">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/LoginDesigner" message="tns:IServer_LoginDesigner_InputMessage" />
@@ -113,21 +103,21 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetOrdersList" message="tns:IServer_GetOrdersList_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetOrdersListResponse" message="tns:IServer_GetOrdersList_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SetStatus">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServer/SetStatus" message="tns:IServer_SetStatus_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServer/SetStatusResponse" message="tns:IServer_SetStatus_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="ShowShoeStatus">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/ShowShoeStatus" message="tns:IServer_ShowShoeStatus_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/ShowShoeStatusResponse" message="tns:IServer_ShowShoeStatus_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="CreateOrder">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServer/CreateOrder" message="tns:IServer_CreateOrder_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServer/CreateOrderResponse" message="tns:IServer_CreateOrder_OutputMessage" />
+    <wsdl:operation name="CreateaOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/CreateaOrder" message="tns:IServer_CreateaOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/CreateaOrderResponse" message="tns:IServer_CreateaOrder_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetOrderList">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetOrderList" message="tns:IServer_GetOrderList_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetOrderListResponse" message="tns:IServer_GetOrderList_OutputMessage" />
+    <wsdl:operation name="GenerateId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/GenerateId" message="tns:IServer_GenerateId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/GenerateIdResponse" message="tns:IServer_GenerateId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PlaceOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/PlaceOrder" message="tns:IServer_PlaceOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/PlaceOrderResponse" message="tns:IServer_PlaceOrder_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -143,15 +133,6 @@
     </wsdl:operation>
     <wsdl:operation name="GetDataUsingDataContract">
       <soap:operation soapAction="http://tempuri.org/IServer/GetDataUsingDataContract" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Register">
-      <soap:operation soapAction="http://tempuri.org/IServer/Register" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -204,15 +185,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SetStatus">
-      <soap:operation soapAction="http://tempuri.org/IServer/SetStatus" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="ShowShoeStatus">
       <soap:operation soapAction="http://tempuri.org/IServer/ShowShoeStatus" style="document" />
       <wsdl:input>
@@ -222,8 +194,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CreateOrder">
-      <soap:operation soapAction="http://tempuri.org/IServer/CreateOrder" style="document" />
+    <wsdl:operation name="CreateaOrder">
+      <soap:operation soapAction="http://tempuri.org/IServer/CreateaOrder" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -231,8 +203,17 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetOrderList">
-      <soap:operation soapAction="http://tempuri.org/IServer/GetOrderList" style="document" />
+    <wsdl:operation name="GenerateId">
+      <soap:operation soapAction="http://tempuri.org/IServer/GenerateId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlaceOrder">
+      <soap:operation soapAction="http://tempuri.org/IServer/PlaceOrder" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
