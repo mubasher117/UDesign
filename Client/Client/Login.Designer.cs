@@ -31,11 +31,8 @@
             this.rbtnDesigner = new System.Windows.Forms.RadioButton();
             this.rbtnAdmin = new System.Windows.Forms.RadioButton();
             this.gbHomeButtons = new System.Windows.Forms.GroupBox();
-            this.lnkCustomize = new System.Windows.Forms.LinkLabel();
             this.lnkPreCustomizedGroup = new System.Windows.Forms.LinkLabel();
             this.lnkHome = new System.Windows.Forms.LinkLabel();
-            this.lnkAddComplaint = new System.Windows.Forms.LinkLabel();
-            this.lnkLogin = new System.Windows.Forms.LinkLabel();
             this.lnkPassword = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -68,31 +65,18 @@
             // 
             // gbHomeButtons
             // 
-            this.gbHomeButtons.Controls.Add(this.lnkCustomize);
             this.gbHomeButtons.Controls.Add(this.lnkPreCustomizedGroup);
             this.gbHomeButtons.Controls.Add(this.lnkHome);
-            this.gbHomeButtons.Controls.Add(this.lnkAddComplaint);
-            this.gbHomeButtons.Controls.Add(this.lnkLogin);
             this.gbHomeButtons.Location = new System.Drawing.Point(67, 39);
             this.gbHomeButtons.Name = "gbHomeButtons";
             this.gbHomeButtons.Size = new System.Drawing.Size(527, 49);
             this.gbHomeButtons.TabIndex = 26;
             this.gbHomeButtons.TabStop = false;
             // 
-            // lnkCustomize
-            // 
-            this.lnkCustomize.AutoSize = true;
-            this.lnkCustomize.Location = new System.Drawing.Point(244, 9);
-            this.lnkCustomize.Name = "lnkCustomize";
-            this.lnkCustomize.Size = new System.Drawing.Size(69, 17);
-            this.lnkCustomize.TabIndex = 14;
-            this.lnkCustomize.TabStop = true;
-            this.lnkCustomize.Text = "Cusomize";
-            // 
             // lnkPreCustomizedGroup
             // 
             this.lnkPreCustomizedGroup.AutoSize = true;
-            this.lnkPreCustomizedGroup.Location = new System.Drawing.Point(116, 9);
+            this.lnkPreCustomizedGroup.Location = new System.Drawing.Point(166, 9);
             this.lnkPreCustomizedGroup.Name = "lnkPreCustomizedGroup";
             this.lnkPreCustomizedGroup.Size = new System.Drawing.Size(107, 17);
             this.lnkPreCustomizedGroup.TabIndex = 13;
@@ -109,26 +93,6 @@
             this.lnkHome.TabStop = true;
             this.lnkHome.Text = "Home";
             this.lnkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHome_LinkClicked);
-            // 
-            // lnkAddComplaint
-            // 
-            this.lnkAddComplaint.AutoSize = true;
-            this.lnkAddComplaint.Location = new System.Drawing.Point(412, 9);
-            this.lnkAddComplaint.Name = "lnkAddComplaint";
-            this.lnkAddComplaint.Size = new System.Drawing.Size(99, 17);
-            this.lnkAddComplaint.TabIndex = 11;
-            this.lnkAddComplaint.TabStop = true;
-            this.lnkAddComplaint.Text = "Add Complaint";
-            // 
-            // lnkLogin
-            // 
-            this.lnkLogin.AutoSize = true;
-            this.lnkLogin.Location = new System.Drawing.Point(341, 9);
-            this.lnkLogin.Name = "lnkLogin";
-            this.lnkLogin.Size = new System.Drawing.Size(43, 17);
-            this.lnkLogin.TabIndex = 10;
-            this.lnkLogin.TabStop = true;
-            this.lnkLogin.Text = "Login";
             // 
             // lnkPassword
             // 
@@ -204,11 +168,8 @@
         private System.Windows.Forms.RadioButton rbtnDesigner;
         private System.Windows.Forms.RadioButton rbtnAdmin;
         private System.Windows.Forms.GroupBox gbHomeButtons;
-        private System.Windows.Forms.LinkLabel lnkCustomize;
         private System.Windows.Forms.LinkLabel lnkPreCustomizedGroup;
         private System.Windows.Forms.LinkLabel lnkHome;
-        private System.Windows.Forms.LinkLabel lnkAddComplaint;
-        private System.Windows.Forms.LinkLabel lnkLogin;
         private System.Windows.Forms.Label lnkPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLogin;

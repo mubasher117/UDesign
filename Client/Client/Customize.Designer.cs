@@ -50,7 +50,6 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.pbSide = new System.Windows.Forms.PictureBox();
             this.gbHomeButtons = new System.Windows.Forms.GroupBox();
-            this.lnkCustomize = new System.Windows.Forms.LinkLabel();
             this.lnkPreCustomizedGroup = new System.Windows.Forms.LinkLabel();
             this.lnkHome = new System.Windows.Forms.LinkLabel();
             this.lnkAddComplaint = new System.Windows.Forms.LinkLabel();
@@ -273,7 +272,6 @@
             // 
             // gbHomeButtons
             // 
-            this.gbHomeButtons.Controls.Add(this.lnkCustomize);
             this.gbHomeButtons.Controls.Add(this.lnkPreCustomizedGroup);
             this.gbHomeButtons.Controls.Add(this.lnkHome);
             this.gbHomeButtons.Controls.Add(this.lnkAddComplaint);
@@ -283,20 +281,10 @@
             this.gbHomeButtons.TabIndex = 60;
             this.gbHomeButtons.TabStop = false;
             // 
-            // lnkCustomize
-            // 
-            this.lnkCustomize.AutoSize = true;
-            this.lnkCustomize.Location = new System.Drawing.Point(244, 9);
-            this.lnkCustomize.Name = "lnkCustomize";
-            this.lnkCustomize.Size = new System.Drawing.Size(73, 17);
-            this.lnkCustomize.TabIndex = 14;
-            this.lnkCustomize.TabStop = true;
-            this.lnkCustomize.Text = "Customize";
-            // 
             // lnkPreCustomizedGroup
             // 
             this.lnkPreCustomizedGroup.AutoSize = true;
-            this.lnkPreCustomizedGroup.Location = new System.Drawing.Point(116, 9);
+            this.lnkPreCustomizedGroup.Location = new System.Drawing.Point(162, 9);
             this.lnkPreCustomizedGroup.Name = "lnkPreCustomizedGroup";
             this.lnkPreCustomizedGroup.Size = new System.Drawing.Size(107, 17);
             this.lnkPreCustomizedGroup.TabIndex = 13;
@@ -435,7 +423,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.PictureBox pbSide;
         private System.Windows.Forms.GroupBox gbHomeButtons;
-        private System.Windows.Forms.LinkLabel lnkCustomize;
         private System.Windows.Forms.LinkLabel lnkPreCustomizedGroup;
         private System.Windows.Forms.LinkLabel lnkHome;
         private System.Windows.Forms.LinkLabel lnkAddComplaint;

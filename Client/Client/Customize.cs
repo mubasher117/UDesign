@@ -191,9 +191,18 @@ namespace Client
 
         private void btnSendOrder_Click(object sender, EventArgs e)
         {
-            localhost.Service1 s = new Service1();
-            s.AddShoe(MainColor, SideColor, cmbBrands.Text, Laces);
-            MessageBox.Show("Your order has been sent");
+            localhost.Shoe sh = new localhost.Shoe();
+            sh.MainColor = MainColor;
+            sh.SideColor = SideColor;
+            sh.Brand = cmbBrands.Text;
+            sh.Laces = Laces;
+
+            MyUtils.curr_shoe = sh;
+
+            UserInfo u = UserInfo.GetInstance();
+            u.Show();
+            this.Hide();
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)

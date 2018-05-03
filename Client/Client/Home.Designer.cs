@@ -63,6 +63,7 @@
             this.lnkCustomize.TabIndex = 14;
             this.lnkCustomize.TabStop = true;
             this.lnkCustomize.Text = "Cusomize";
+            this.lnkCustomize.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCustomize_LinkClicked);
             // 
             // lnkPreCustomizedGroup
             // 
@@ -104,6 +105,7 @@
             this.lnkLogin.TabIndex = 10;
             this.lnkLogin.TabStop = true;
             this.lnkLogin.Text = "Login";
+            this.lnkLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLogin_LinkClicked);
             // 
             // txtCreativityInYourHands
             // 

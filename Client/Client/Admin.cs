@@ -44,5 +44,12 @@ namespace Client
             h.Show();
             this.Hide();
         }
+
+        private void lnkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Home h = Home.GetInstance();
+            h.Show();
+            this.Hide();
+        }
     }
 }

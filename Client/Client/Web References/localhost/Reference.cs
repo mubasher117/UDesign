@@ -49,6 +49,10 @@ namespace Client.localhost {
         
         private System.Threading.SendOrPostCallback ShowShoeStatusOperationCompleted;
         
+        private System.Threading.SendOrPostCallback CreateOrderOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetOrderListOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -116,6 +120,12 @@ namespace Client.localhost {
         
         /// <remarks/>
         public event ShowShoeStatusCompletedEventHandler ShowShoeStatusCompleted;
+        
+        /// <remarks/>
+        public event CreateOrderCompletedEventHandler CreateOrderCompleted;
+        
+        /// <remarks/>
+        public event GetOrderListCompletedEventHandler GetOrderListCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -435,6 +445,63 @@ namespace Client.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/CreateOrder", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Order CreateOrder() {
+            object[] results = this.Invoke("CreateOrder", new object[0]);
+            return ((Order)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CreateOrderAsync() {
+            this.CreateOrderAsync(null);
+        }
+        
+        /// <remarks/>
+        public void CreateOrderAsync(object userState) {
+            if ((this.CreateOrderOperationCompleted == null)) {
+                this.CreateOrderOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCreateOrderOperationCompleted);
+            }
+            this.InvokeAsync("CreateOrder", new object[0], this.CreateOrderOperationCompleted, userState);
+        }
+        
+        private void OnCreateOrderOperationCompleted(object arg) {
+            if ((this.CreateOrderCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CreateOrderCompleted(this, new CreateOrderCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetOrderList", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+        public Shoe[] GetOrderList() {
+            object[] results = this.Invoke("GetOrderList", new object[0]);
+            return ((Shoe[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetOrderListAsync() {
+            this.GetOrderListAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetOrderListAsync(object userState) {
+            if ((this.GetOrderListOperationCompleted == null)) {
+                this.GetOrderListOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetOrderListOperationCompleted);
+            }
+            this.InvokeAsync("GetOrderList", new object[0], this.GetOrderListOperationCompleted, userState);
+        }
+        
+        private void OnGetOrderListOperationCompleted(object arg) {
+            if ((this.GetOrderListCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetOrderListCompleted(this, new GetOrderListCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -496,6 +563,104 @@ namespace Client.localhost {
             }
             set {
                 this.stringValueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+    public partial class Order {
+        
+        private string adressField;
+        
+        private System.DateTime deliveryDateField;
+        
+        private bool deliveryDateFieldSpecified;
+        
+        private int idField;
+        
+        private bool idFieldSpecified;
+        
+        private string nameField;
+        
+        private Shoe shoeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Adress {
+            get {
+                return this.adressField;
+            }
+            set {
+                this.adressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DeliveryDate {
+            get {
+                return this.deliveryDateField;
+            }
+            set {
+                this.deliveryDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DeliveryDateSpecified {
+            get {
+                return this.deliveryDateFieldSpecified;
+            }
+            set {
+                this.deliveryDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IdSpecified {
+            get {
+                return this.idFieldSpecified;
+            }
+            set {
+                this.idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Shoe Shoe {
+            get {
+                return this.shoeField;
+            }
+            set {
+                this.shoeField = value;
             }
         }
     }
@@ -780,6 +945,58 @@ namespace Client.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void CreateOrderCompletedEventHandler(object sender, CreateOrderCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CreateOrderCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CreateOrderCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Order Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Order)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void GetOrderListCompletedEventHandler(object sender, GetOrderListCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOrderListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOrderListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Shoe[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Shoe[])(this.results[0]));
             }
         }
     }

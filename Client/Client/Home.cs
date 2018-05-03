@@ -34,11 +34,29 @@ namespace Client
 
         private void lnkDesignIT_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Customize login = Customize.GetInstance();
+            login.Show();
+            this.Hide();
 
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = Login.GetInstance();
+            login.Show();
+            this.Hide();
+        }
+
+        private void lnkCustomize_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Customize login = Customize.GetInstance();
+            login.Show();
+            this.Hide();
 
         }
     }

@@ -9,5 +9,6 @@ namespace Client
     class MyUtils
     {
         public static localhost.Shoe curr_shoe = null;
+        public static localhost.Order curr_order = null;
     }
 }

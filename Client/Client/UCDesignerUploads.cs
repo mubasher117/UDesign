@@ -12,7 +12,7 @@ namespace Client
 {
     public partial class ucDUpload : UserControl
     {
-        private ucDUpload()
+        public ucDUpload()
         {
             InitializeComponent();
         }
