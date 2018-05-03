@@ -23,8 +23,7 @@ namespace Server
 
         // TODO: Add your service operations here
 
-        [OperationContract]
-        void Register(string name, string pass);
+        
         [OperationContract]
         bool LoginDesigner(string name, string pass);
         [OperationContract]
@@ -36,11 +35,13 @@ namespace Server
         void AddShoe(string m, string s, string b, string l);
 
         [OperationContract]
-        List<Shoe> GetOrdersList();
-        [OperationContract]
-        void SetStatus(string m, string s, string b, string l);
+        List<Order> GetOrdersList();
+      /*  [OperationContract]
+        void SetStatus(string m, string s, string b, string l); */
         [OperationContract]
         string ShowShoeStatus(string m, string s, string b, string l);
+        [OperationContract]
+        Order CreateaOrder();
 
 
     }

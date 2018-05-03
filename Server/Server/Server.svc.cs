@@ -32,14 +32,6 @@ namespace Server
             return composite;
         }
 
-        public void Register(string name, string pass)
-        {
-            User u = new User();
-            u.Username = name;
-            u.Password = pass;
-
-            UserDL.Users.Add(u);
-        }
 
 
         public bool LoginDesigner(string name, string pass)
@@ -77,12 +69,12 @@ namespace Server
             sh.Laces = l;
             sh.Status = "Unapproved";
 
-            OrderDL.orders.Add(sh);
+            //OrderDL.orders.Add(sh);
 
 
         }
 
-        public List<Shoe> GetOrdersList()
+        public List<Order> GetOrdersList()
         {
             return OrderDL.orders;
         }
@@ -90,28 +82,34 @@ namespace Server
         public string ShowShoeStatus(string m, string s, string b, string l)
         {
              
-            foreach (Shoe shoe in OrderDL.orders)
+            foreach (Order o in OrderDL.orders)
             {
-                if (shoe.MainColor == m && shoe.SideColor == s && shoe.Brand == b && shoe.Laces == l )
+              /*  if (shoe.MainColor == m && shoe.SideColor == s && shoe.Brand == b && shoe.Laces == l )
                 {
                     return shoe.Status;
-                }
+                }*/
             }
             
             {
                 return "staus not found";
             }
         }
-
+/*
         public void SetStatus(string m, string s, string b, string l)
         {
-            foreach (Shoe shoe in OrderDL.orders)
+            foreach (ot in OrderDL.orders)
             {
                 if (shoe.MainColor == m && shoe.SideColor == s && shoe.Brand == b && shoe.Laces == l)
                 {
                     shoe.Status = "Approved";
                 }
             }
+        }
+        */
+        public Order CreateaOrder()
+        {
+            Order o = new Order();
+            return o;
         }
 
 

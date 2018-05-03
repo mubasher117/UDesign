@@ -8,6 +8,6 @@ namespace Server
     [DataContract]
     public class OrderDL
     {
-        public static List<Shoe> orders = new List<Shoe>();
+        public static List<Order> orders = new List<Order>();
     }
 }
