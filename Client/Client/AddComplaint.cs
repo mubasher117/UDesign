@@ -36,16 +36,16 @@ namespace Client
         private void btnAddComplaint_Click(object sender, EventArgs e)
         {
             localhost.Complaint complaint = new localhost.Complaint();
-            complaint.Cname = txtName.Text;
-            complaint.Mno = txtMobileNo.Text;
+            complaint.Name = txtName.Text;
+            complaint.Cell = txtMobileNo.Text;
             complaint.Email = txtEmail.Text;
-            complaint.ComplaintText = txtComplaint.Text;
+            complaint.Complaint_Text = txtComplaint.Text;
 
             localhost.Service1 s = new localhost.Service1();
             s.AddComplaint(complaint);
 
 
-            MessageBox.Show("Your complaint has been sent.")
+            MessageBox.Show("Your complaint has been sent.");
 
             
         }

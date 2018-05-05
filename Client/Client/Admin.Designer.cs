@@ -89,6 +89,7 @@
             this.btnComplaints.TabIndex = 19;
             this.btnComplaints.Text = "Complaints";
             this.btnComplaints.UseVisualStyleBackColor = true;
+            this.btnComplaints.Click += new System.EventHandler(this.btnComplaints_Click);
             // 
             // btnDesignerDesign
             // 

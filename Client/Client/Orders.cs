@@ -42,17 +42,20 @@ namespace Client
             DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
             cmb.HeaderText = "Shoe Details";
             cmb.MaxDropDownItems = 4;
-            cmb.Items.Add("Hi");
             dgOrders.Columns.Add(cmb);
             
         }
 
         private void dgOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 7)
-            {
-                
-            }
+            
+        }
+
+        private void lnkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Admin a = Admin.GetInstance();
+            a.Show();
+            this.Hide();
         }
     }
 }

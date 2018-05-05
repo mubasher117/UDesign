@@ -86,6 +86,12 @@
   <wsdl:message name="IServer_AddComplaint_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddComplaintResponse" />
   </wsdl:message>
+  <wsdl:message name="IServer_GetAllComplaints_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllComplaints" />
+  </wsdl:message>
+  <wsdl:message name="IServer_GetAllComplaints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllComplaintsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetData" message="tns:IServer_GetData_InputMessage" />
@@ -138,6 +144,10 @@
     <wsdl:operation name="AddComplaint">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/AddComplaint" message="tns:IServer_AddComplaint_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/AddComplaintResponse" message="tns:IServer_AddComplaint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllComplaints">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetAllComplaints" message="tns:IServer_GetAllComplaints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetAllComplaintsResponse" message="tns:IServer_GetAllComplaints_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -252,6 +262,15 @@
     </wsdl:operation>
     <wsdl:operation name="AddComplaint">
       <soap:operation soapAction="http://tempuri.org/IServer/AddComplaint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllComplaints">
+      <soap:operation soapAction="http://tempuri.org/IServer/GetAllComplaints" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

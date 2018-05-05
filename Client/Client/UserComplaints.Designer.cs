@@ -1,6 +1,6 @@
 ﻿namespace Client
 {
-    partial class Orders
+    partial class UserComplaints
     {
         /// <summary>
         /// Required designer variable.
@@ -29,42 +29,40 @@
         private void InitializeComponent()
         {
             this.lnkBack = new System.Windows.Forms.LinkLabel();
-            this.dgOrders = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).BeginInit();
+            this.gvAllComplaints = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAllComplaints)).BeginInit();
             this.SuspendLayout();
             // 
             // lnkBack
             // 
             this.lnkBack.AutoSize = true;
-            this.lnkBack.Location = new System.Drawing.Point(704, 9);
+            this.lnkBack.Location = new System.Drawing.Point(644, 9);
             this.lnkBack.Name = "lnkBack";
             this.lnkBack.Size = new System.Drawing.Size(39, 17);
-            this.lnkBack.TabIndex = 3;
+            this.lnkBack.TabIndex = 0;
             this.lnkBack.TabStop = true;
             this.lnkBack.Text = "Back";
-            this.lnkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkBack_LinkClicked);
             // 
-            // dgOrders
+            // gvAllComplaints
             // 
-            this.dgOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgOrders.Location = new System.Drawing.Point(37, 56);
-            this.dgOrders.Name = "dgOrders";
-            this.dgOrders.RowTemplate.Height = 24;
-            this.dgOrders.Size = new System.Drawing.Size(686, 362);
-            this.dgOrders.TabIndex = 2;
-            this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
+            this.gvAllComplaints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvAllComplaints.Location = new System.Drawing.Point(23, 104);
+            this.gvAllComplaints.Name = "gvAllComplaints";
+            this.gvAllComplaints.RowTemplate.Height = 24;
+            this.gvAllComplaints.Size = new System.Drawing.Size(667, 404);
+            this.gvAllComplaints.TabIndex = 1;
             // 
-            // Orders
+            // UserComplaints
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(717, 530);
+            this.Controls.Add(this.gvAllComplaints);
             this.Controls.Add(this.lnkBack);
-            this.Controls.Add(this.dgOrders);
-            this.Name = "Orders";
-            this.Text = "Orders";
-            this.Load += new System.EventHandler(this.Orders_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).EndInit();
+            this.Name = "UserComplaints";
+            this.Text = "UserComplaints";
+            this.Load += new System.EventHandler(this.UserComplaints_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvAllComplaints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,6 +71,6 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel lnkBack;
-        private System.Windows.Forms.DataGridView dgOrders;
+        private System.Windows.Forms.DataGridView gvAllComplaints;
     }
 }

@@ -50,6 +50,8 @@ namespace Server
         Complaint CreateComplaint();
         [OperationContract]
         void AddComplaint(Complaint c);
+        [OperationContract]
+        List<Complaint> GetAllComplaints();
 
     }
 

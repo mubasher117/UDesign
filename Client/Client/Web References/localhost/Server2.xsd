@@ -34,11 +34,17 @@
   <xs:element name="Shoe" nillable="true" type="tns:Shoe" />
   <xs:complexType name="Complaint">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Cname" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ComplaintText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cell" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Complaint_Text" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Mno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Complaint" nillable="true" type="tns:Complaint" />
+  <xs:complexType name="ArrayOfComplaint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Complaint" nillable="true" type="tns:Complaint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComplaint" nillable="true" type="tns:ArrayOfComplaint" />
 </xs:schema>

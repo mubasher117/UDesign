@@ -58,5 +58,12 @@ namespace Client
             h.Show();
             this.Hide();
         }
+
+        private void btnComplaints_Click(object sender, EventArgs e)
+        {
+            UserComplaints h = UserComplaints.GetInstance();
+            h.Show();
+            this.Hide();
+        }
     }
 }

@@ -134,5 +134,10 @@ namespace Server
         {
             ComplainDL.complaints.Add(c);
         }
+
+        public List<Complaint> GetAllComplaints()
+        {
+            return ComplainDL.complaints;
+        }
     }
 }

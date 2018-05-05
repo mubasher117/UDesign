@@ -40,3 +40,10 @@ C:\Users\daimj\Desktop\UDesign\Server\Server\obj\Debug\Server.csprojResolveAssem
 C:\Users\daimj\Desktop\UDesign\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\daimj\Desktop\UDesign\Server\Server\obj\Debug\Server.dll
 C:\Users\daimj\Desktop\UDesign\Server\Server\obj\Debug\Server.pdb
+C:\Users\92302\Desktop\UDesign\Server\Server\bin\Server.dll.config
+C:\Users\92302\Desktop\UDesign\Server\Server\bin\Server.dll
+C:\Users\92302\Desktop\UDesign\Server\Server\bin\Server.pdb
+C:\Users\92302\Desktop\UDesign\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\92302\Desktop\UDesign\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\92302\Desktop\UDesign\Server\Server\obj\Debug\Server.dll
+C:\Users\92302\Desktop\UDesign\Server\Server\obj\Debug\Server.pdb

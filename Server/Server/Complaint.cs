@@ -15,12 +15,12 @@ namespace Server
         private string comp;
 
         [DataMember]
-        public string Cname { get => cname; set => cname = value; }
+        public string Name { get => cname; set => cname = value; }
         [DataMember]
-        public string Mno { get => mno; set => mno = value; }
+        public string Cell { get => mno; set => mno = value; }
         [DataMember]
         public string Email { get => email; set => email = value; }
         [DataMember]
-        public string ComplaintText { get => comp; set => comp = value; }
+        public string Complaint_Text { get => comp; set => comp = value; }
     }
 }
