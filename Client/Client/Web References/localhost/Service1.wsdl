@@ -80,11 +80,11 @@
   <wsdl:message name="IServer_CreateComplaint_OutputMessage">
     <wsdl:part name="parameters" element="tns:CreateComplaintResponse" />
   </wsdl:message>
-  <wsdl:message name="IServer_CC_InputMessage">
-    <wsdl:part name="parameters" element="tns:CC" />
+  <wsdl:message name="IServer_AddComplaint_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddComplaint" />
   </wsdl:message>
-  <wsdl:message name="IServer_CC_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CCResponse" />
+  <wsdl:message name="IServer_AddComplaint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddComplaintResponse" />
   </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
@@ -135,9 +135,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/CreateComplaint" message="tns:IServer_CreateComplaint_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/CreateComplaintResponse" message="tns:IServer_CreateComplaint_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="CC">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServer/CC" message="tns:IServer_CC_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServer/CCResponse" message="tns:IServer_CC_OutputMessage" />
+    <wsdl:operation name="AddComplaint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/AddComplaint" message="tns:IServer_AddComplaint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/AddComplaintResponse" message="tns:IServer_AddComplaint_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -250,8 +250,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="CC">
-      <soap:operation soapAction="http://tempuri.org/IServer/CC" style="document" />
+    <wsdl:operation name="AddComplaint">
+      <soap:operation soapAction="http://tempuri.org/IServer/AddComplaint" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

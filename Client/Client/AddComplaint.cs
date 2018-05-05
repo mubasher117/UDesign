@@ -41,6 +41,12 @@ namespace Client
             complaint.Email = txtEmail.Text;
             complaint.ComplaintText = txtComplaint.Text;
 
+            localhost.Service1 s = new localhost.Service1();
+            s.AddComplaint(complaint);
+
+
+            MessageBox.Show("Your complaint has been sent.")
+
             
         }
     }

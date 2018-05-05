@@ -41,8 +41,4 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Complaint" nillable="true" type="tns:Complaint" />
-  <xs:complexType name="ComplainDL">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:element name="ComplainDL" nillable="true" type="tns:ComplainDL" />
 </xs:schema>

@@ -95,6 +95,7 @@
             this.lnkAddComplaint.TabIndex = 11;
             this.lnkAddComplaint.TabStop = true;
             this.lnkAddComplaint.Text = "Add Complaint";
+            this.lnkAddComplaint.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAddComplaint_LinkClicked);
             // 
             // lnkLogin
             // 

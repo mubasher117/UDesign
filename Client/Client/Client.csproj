@@ -182,9 +182,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Web References\localhost\ComplainDL.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
     <None Include="Web References\localhost\Complaint.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

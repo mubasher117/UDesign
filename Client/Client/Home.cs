@@ -59,5 +59,13 @@ namespace Client
             this.Hide();
 
         }
+
+        private void lnkAddComplaint_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddComplaint login = AddComplaint.GetInstance();
+            login.Show();
+            this.Hide();
+
+        }
     }
 }

@@ -164,16 +164,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="CC">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="CCResponse">
+  <xs:element name="AddComplaint">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="CCResult" nillable="true" type="q8:ComplainDL" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="c" nillable="true" type="q8:Complaint" />
       </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddComplaintResponse">
+    <xs:complexType>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
 </xs:schema>
