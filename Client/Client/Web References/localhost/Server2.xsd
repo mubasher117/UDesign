@@ -20,6 +20,7 @@
       <xs:element minOccurs="0" name="Id" type="xs:int" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Shoe" nillable="true" type="tns:Shoe" />
+      <xs:element minOccurs="0" name="Status" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Order" nillable="true" type="tns:Order" />

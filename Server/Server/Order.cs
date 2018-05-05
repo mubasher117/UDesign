@@ -10,6 +10,8 @@ namespace Server
     [DataContract]
     public class Order
     {
+
+        private bool status = false;
         private int id;
         private string name;
         private string address;
@@ -26,5 +28,7 @@ namespace Server
         public Shoe Shoe { get => shoe; set => shoe = value; }
         [DataMember]
         public int Id { get => id; set => id = value; }
+        [DataMember]
+        public bool Status { get => status; set => status = value; }
     }
 }

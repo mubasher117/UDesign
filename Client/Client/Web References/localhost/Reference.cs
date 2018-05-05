@@ -57,6 +57,12 @@ namespace Client.localhost {
         
         private System.Threading.SendOrPostCallback GetAllComplaintsOperationCompleted;
         
+        private System.Threading.SendOrPostCallback ApproveAllOrdersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetApprovedOrdersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ClearAllOrdersOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -136,6 +142,15 @@ namespace Client.localhost {
         
         /// <remarks/>
         public event GetAllComplaintsCompletedEventHandler GetAllComplaintsCompleted;
+        
+        /// <remarks/>
+        public event ApproveAllOrdersCompletedEventHandler ApproveAllOrdersCompleted;
+        
+        /// <remarks/>
+        public event GetApprovedOrdersCompletedEventHandler GetApprovedOrdersCompleted;
+        
+        /// <remarks/>
+        public event ClearAllOrdersCompletedEventHandler ClearAllOrdersCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -560,6 +575,87 @@ namespace Client.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/ApproveAllOrders", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ApproveAllOrders() {
+            this.Invoke("ApproveAllOrders", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void ApproveAllOrdersAsync() {
+            this.ApproveAllOrdersAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ApproveAllOrdersAsync(object userState) {
+            if ((this.ApproveAllOrdersOperationCompleted == null)) {
+                this.ApproveAllOrdersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnApproveAllOrdersOperationCompleted);
+            }
+            this.InvokeAsync("ApproveAllOrders", new object[0], this.ApproveAllOrdersOperationCompleted, userState);
+        }
+        
+        private void OnApproveAllOrdersOperationCompleted(object arg) {
+            if ((this.ApproveAllOrdersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ApproveAllOrdersCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetApprovedOrders", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+        public Order[] GetApprovedOrders() {
+            object[] results = this.Invoke("GetApprovedOrders", new object[0]);
+            return ((Order[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetApprovedOrdersAsync() {
+            this.GetApprovedOrdersAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetApprovedOrdersAsync(object userState) {
+            if ((this.GetApprovedOrdersOperationCompleted == null)) {
+                this.GetApprovedOrdersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetApprovedOrdersOperationCompleted);
+            }
+            this.InvokeAsync("GetApprovedOrders", new object[0], this.GetApprovedOrdersOperationCompleted, userState);
+        }
+        
+        private void OnGetApprovedOrdersOperationCompleted(object arg) {
+            if ((this.GetApprovedOrdersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetApprovedOrdersCompleted(this, new GetApprovedOrdersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/ClearAllOrders", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void ClearAllOrders() {
+            this.Invoke("ClearAllOrders", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void ClearAllOrdersAsync() {
+            this.ClearAllOrdersAsync(null);
+        }
+        
+        /// <remarks/>
+        public void ClearAllOrdersAsync(object userState) {
+            if ((this.ClearAllOrdersOperationCompleted == null)) {
+                this.ClearAllOrdersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnClearAllOrdersOperationCompleted);
+            }
+            this.InvokeAsync("ClearAllOrders", new object[0], this.ClearAllOrdersOperationCompleted, userState);
+        }
+        
+        private void OnClearAllOrdersOperationCompleted(object arg) {
+            if ((this.ClearAllOrdersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ClearAllOrdersCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -769,6 +865,10 @@ namespace Client.localhost {
         
         private Shoe shoeField;
         
+        private bool statusField;
+        
+        private bool statusFieldSpecified;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Adress {
@@ -841,6 +941,27 @@ namespace Client.localhost {
             }
             set {
                 this.shoeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool StatusSpecified {
+            get {
+                return this.statusFieldSpecified;
+            }
+            set {
+                this.statusFieldSpecified = value;
             }
         }
     }
@@ -1179,6 +1300,40 @@ namespace Client.localhost {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void ApproveAllOrdersCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void GetApprovedOrdersCompletedEventHandler(object sender, GetApprovedOrdersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetApprovedOrdersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetApprovedOrdersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Order[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Order[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void ClearAllOrdersCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

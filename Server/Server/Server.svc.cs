@@ -67,7 +67,6 @@ namespace Server
             sh.SideColor = s;
             sh.Brand = b;
             sh.Laces = l;
-            sh.Status = "Unapproved";
 
             //OrderDL.orders.Add(sh);
 
@@ -139,5 +138,22 @@ namespace Server
         {
             return ComplainDL.complaints;
         }
+        public void ApproveAllOrders()
+        {
+           foreach (Order o in OrderDL.orders)
+            {
+             //   OrderDL.orders.
+            }
+
+        }
+        public void ClearAllOrders()
+        {
+            OrderDL.orders.Clear();
+        }
+        public List<Order> GetApprovedOrders()
+        {
+            return OrderDL.approved_orders;
+        }
+        
     }
 }

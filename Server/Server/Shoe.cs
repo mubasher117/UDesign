@@ -17,7 +17,6 @@ namespace Server
      
         private string laces ;
         private string brand;
-        private string status;
         
         //private Image logo;
         
@@ -30,7 +29,6 @@ namespace Server
         //public Image Logo { get => logo; set => logo = value; }
         [DataMember]
         public string Laces { get => laces; set => laces = value; }
-        public string Status { get => status; set => status = value; }
 
 
         /*

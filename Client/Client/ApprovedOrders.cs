@@ -10,36 +10,35 @@ using System.Windows.Forms;
 
 namespace Client
 {
-    public partial class UserComplaints : Form
+    public partial class ApprovedOrders : Form
     {
-        private UserComplaints()
+        private ApprovedOrders()
         {
             InitializeComponent();
         }
-        private static UserComplaints L = null;
+        private static ApprovedOrders L = null;
 
-        public static UserComplaints GetInstance()
+        public static ApprovedOrders GetInstance()
         {
             if (L == null)
             {
-                return new UserComplaints();
+                return new ApprovedOrders();
             }
             return L;
         }
-
-        private void UserComplaints_Load(object sender, EventArgs e)
-        {
-            localhost.Service1 s = new localhost.Service1();
-            BindingSource bs = new BindingSource();
-            bs.DataSource = s.GetAllComplaints();
-            gvAllComplaints.DataSource = bs;
-        }
-
         private void lnkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Admin a = Admin.GetInstance();
             a.Show();
             this.Hide();
+        }
+
+        private void ApprovedOrders_Load(object sender, EventArgs e)
+        {
+            localhost.Service1 s = new localhost.Service1();
+            BindingSource bs = new BindingSource();
+            bs.DataSource = s.GetApprovedOrders();
+            gvApprovedOrders.DataSource = bs;            
         }
     }
 }

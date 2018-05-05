@@ -52,6 +52,12 @@ namespace Server
         void AddComplaint(Complaint c);
         [OperationContract]
         List<Complaint> GetAllComplaints();
+        [OperationContract]
+        void ApproveAllOrders();
+        [OperationContract]
+        List<Order> GetApprovedOrders();
+        [OperationContract]
+        void ClearAllOrders();
 
     }
 

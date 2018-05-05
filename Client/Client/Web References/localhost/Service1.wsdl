@@ -92,6 +92,24 @@
   <wsdl:message name="IServer_GetAllComplaints_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllComplaintsResponse" />
   </wsdl:message>
+  <wsdl:message name="IServer_ApproveAllOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveAllOrders" />
+  </wsdl:message>
+  <wsdl:message name="IServer_ApproveAllOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveAllOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServer_GetApprovedOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovedOrders" />
+  </wsdl:message>
+  <wsdl:message name="IServer_GetApprovedOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApprovedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServer_ClearAllOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearAllOrders" />
+  </wsdl:message>
+  <wsdl:message name="IServer_ClearAllOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearAllOrdersResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetData" message="tns:IServer_GetData_InputMessage" />
@@ -148,6 +166,18 @@
     <wsdl:operation name="GetAllComplaints">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetAllComplaints" message="tns:IServer_GetAllComplaints_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetAllComplaintsResponse" message="tns:IServer_GetAllComplaints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAllOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/ApproveAllOrders" message="tns:IServer_ApproveAllOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/ApproveAllOrdersResponse" message="tns:IServer_ApproveAllOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovedOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetApprovedOrders" message="tns:IServer_GetApprovedOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetApprovedOrdersResponse" message="tns:IServer_GetApprovedOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/ClearAllOrders" message="tns:IServer_ClearAllOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/ClearAllOrdersResponse" message="tns:IServer_ClearAllOrders_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -271,6 +301,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllComplaints">
       <soap:operation soapAction="http://tempuri.org/IServer/GetAllComplaints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveAllOrders">
+      <soap:operation soapAction="http://tempuri.org/IServer/ApproveAllOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApprovedOrders">
+      <soap:operation soapAction="http://tempuri.org/IServer/GetApprovedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAllOrders">
+      <soap:operation soapAction="http://tempuri.org/IServer/ClearAllOrders" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -30,6 +30,9 @@
         {
             this.lnkBack = new System.Windows.Forms.LinkLabel();
             this.dgOrders = new System.Windows.Forms.DataGridView();
+            this.btnApproveSelected = new System.Windows.Forms.Button();
+            this.btnApproveAll = new System.Windows.Forms.Button();
+            this.btnApproved = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,18 +50,50 @@
             // dgOrders
             // 
             this.dgOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgOrders.Location = new System.Drawing.Point(37, 56);
+            this.dgOrders.Location = new System.Drawing.Point(12, 71);
             this.dgOrders.Name = "dgOrders";
             this.dgOrders.RowTemplate.Height = 24;
-            this.dgOrders.Size = new System.Drawing.Size(686, 362);
+            this.dgOrders.Size = new System.Drawing.Size(761, 377);
             this.dgOrders.TabIndex = 2;
             this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
+            // 
+            // btnApproveSelected
+            // 
+            this.btnApproveSelected.Location = new System.Drawing.Point(501, 465);
+            this.btnApproveSelected.Name = "btnApproveSelected";
+            this.btnApproveSelected.Size = new System.Drawing.Size(134, 25);
+            this.btnApproveSelected.TabIndex = 4;
+            this.btnApproveSelected.Text = "Approve Selected";
+            this.btnApproveSelected.UseVisualStyleBackColor = true;
+            // 
+            // btnApproveAll
+            // 
+            this.btnApproveAll.Location = new System.Drawing.Point(665, 463);
+            this.btnApproveAll.Name = "btnApproveAll";
+            this.btnApproveAll.Size = new System.Drawing.Size(107, 27);
+            this.btnApproveAll.TabIndex = 5;
+            this.btnApproveAll.Text = "Approve All";
+            this.btnApproveAll.UseVisualStyleBackColor = true;
+            this.btnApproveAll.Click += new System.EventHandler(this.btnApproveAll_Click);
+            // 
+            // btnApproved
+            // 
+            this.btnApproved.Location = new System.Drawing.Point(619, 496);
+            this.btnApproved.Name = "btnApproved";
+            this.btnApproved.Size = new System.Drawing.Size(153, 34);
+            this.btnApproved.TabIndex = 6;
+            this.btnApproved.Text = "Approved Orders";
+            this.btnApproved.UseVisualStyleBackColor = true;
+            this.btnApproved.Click += new System.EventHandler(this.btnApproved_Click);
             // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(816, 538);
+            this.Controls.Add(this.btnApproved);
+            this.Controls.Add(this.btnApproveAll);
+            this.Controls.Add(this.btnApproveSelected);
             this.Controls.Add(this.lnkBack);
             this.Controls.Add(this.dgOrders);
             this.Name = "Orders";
@@ -74,5 +109,8 @@
 
         private System.Windows.Forms.LinkLabel lnkBack;
         private System.Windows.Forms.DataGridView dgOrders;
+        private System.Windows.Forms.Button btnApproveSelected;
+        private System.Windows.Forms.Button btnApproveAll;
+        private System.Windows.Forms.Button btnApproved;
     }
 }

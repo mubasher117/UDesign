@@ -59,6 +59,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ApprovedOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApprovedOrders.Designer.cs">
+      <DependentUpon>ApprovedOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customize.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApprovedOrders.resx">
+      <DependentUpon>ApprovedOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customize.resx">
       <DependentUpon>Customize.cs</DependentUpon>

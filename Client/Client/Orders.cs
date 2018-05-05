@@ -57,5 +57,22 @@ namespace Client
             a.Show();
             this.Hide();
         }
+
+        private void btnApproveAll_Click(object sender, EventArgs e)
+        {
+            localhost.Service1 s = new localhost.Service1();
+            s.ApproveAllOrders();
+            ApprovedOrders a = ApprovedOrders.GetInstance();
+            a.Show();
+            this.Hide();
+            s.ClearAllOrders();
+        }
+
+        private void btnApproved_Click(object sender, EventArgs e)
+        {
+            ApprovedOrders a = ApprovedOrders.GetInstance();
+            a.Show();
+            this.Hide();
+        }
     }
 }

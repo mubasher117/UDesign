@@ -91,3 +91,6 @@ C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.pdb
 C:\Users\92302\Desktop\UDesign\Client\Client\bin\Debug\Client.exe.config
 C:\Users\92302\Desktop\UDesign\Client\Client\bin\Debug\Client.exe
 C:\Users\92302\Desktop\UDesign\Client\Client\bin\Debug\Client.pdb
+D:\UDesign\Client\Client\obj\Debug\Client.AddComplaint.resources
+D:\UDesign\Client\Client\obj\Debug\Client.UserComplaints.resources
+D:\UDesign\Client\Client\obj\Debug\Client.ApprovedOrders.resources
