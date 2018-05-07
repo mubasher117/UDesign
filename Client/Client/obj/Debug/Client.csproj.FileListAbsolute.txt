@@ -117,3 +117,4 @@ C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.csproj.GenerateRes
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.exe
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.pdb
+D:\UDesign\Client\Client\obj\Debug\Client.Test.resources

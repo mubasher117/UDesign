@@ -30,7 +30,7 @@ namespace Client
 
         public string MainColor;
         public string SideColor;
-        public string Laces;
+        public string Laces = "No Laces";
         private void lnkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Home h = Home.GetInstance();
@@ -179,7 +179,7 @@ namespace Client
                 }
                 else
                 {
-                    pbMain.Image = Client.Properties.Resources.ShoePinkFront;
+                    pbMain.Image = Client.Properties.Resources.ShoeYellowFront;
                     MainColor = "Yellow";
                 }
             }

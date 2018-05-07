@@ -58,7 +58,9 @@ namespace Server
         List<Order> GetApprovedOrders();
         [OperationContract]
         void ClearAllOrders();
-
+        [OperationContract]
+        List<Shoe> GetShoefromOrders(int i);
+    
     }
 
 

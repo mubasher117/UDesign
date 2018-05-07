@@ -28,18 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lnkBack = new System.Windows.Forms.LinkLabel();
             this.dgOrders = new System.Windows.Forms.DataGridView();
             this.btnApproveSelected = new System.Windows.Forms.Button();
             this.btnApproveAll = new System.Windows.Forms.Button();
             this.btnApproved = new System.Windows.Forms.Button();
+            this.gvSelectedOrder = new System.Windows.Forms.DataGridView();
+            this.getOrdersListCompletedEventArgsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.getOrdersListCompletedEventArgsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lblAllOrders = new System.Windows.Forms.Label();
+            this.lblSelectedORder = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSelectedOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getOrdersListCompletedEventArgsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getOrdersListCompletedEventArgsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lnkBack
             // 
             this.lnkBack.AutoSize = true;
-            this.lnkBack.Location = new System.Drawing.Point(704, 9);
+            this.lnkBack.Location = new System.Drawing.Point(1253, 22);
             this.lnkBack.Name = "lnkBack";
             this.lnkBack.Size = new System.Drawing.Size(39, 17);
             this.lnkBack.TabIndex = 3;
@@ -50,10 +59,10 @@
             // dgOrders
             // 
             this.dgOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgOrders.Location = new System.Drawing.Point(12, 71);
+            this.dgOrders.Location = new System.Drawing.Point(12, 59);
             this.dgOrders.Name = "dgOrders";
             this.dgOrders.RowTemplate.Height = 24;
-            this.dgOrders.Size = new System.Drawing.Size(761, 377);
+            this.dgOrders.Size = new System.Drawing.Size(869, 398);
             this.dgOrders.TabIndex = 2;
             this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
             // 
@@ -86,11 +95,50 @@
             this.btnApproved.UseVisualStyleBackColor = true;
             this.btnApproved.Click += new System.EventHandler(this.btnApproved_Click);
             // 
+            // gvSelectedOrder
+            // 
+            this.gvSelectedOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvSelectedOrder.Location = new System.Drawing.Point(887, 59);
+            this.gvSelectedOrder.Name = "gvSelectedOrder";
+            this.gvSelectedOrder.RowTemplate.Height = 24;
+            this.gvSelectedOrder.Size = new System.Drawing.Size(417, 140);
+            this.gvSelectedOrder.TabIndex = 7;
+            this.gvSelectedOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // getOrdersListCompletedEventArgsBindingSource
+            // 
+            this.getOrdersListCompletedEventArgsBindingSource.DataSource = typeof(Client.localhost.GetOrdersListCompletedEventArgs);
+            // 
+            // getOrdersListCompletedEventArgsBindingSource1
+            // 
+            this.getOrdersListCompletedEventArgsBindingSource1.DataSource = typeof(Client.localhost.GetOrdersListCompletedEventArgs);
+            // 
+            // lblAllOrders
+            // 
+            this.lblAllOrders.AutoSize = true;
+            this.lblAllOrders.Location = new System.Drawing.Point(12, 39);
+            this.lblAllOrders.Name = "lblAllOrders";
+            this.lblAllOrders.Size = new System.Drawing.Size(71, 17);
+            this.lblAllOrders.TabIndex = 8;
+            this.lblAllOrders.Text = "All Orders";
+            // 
+            // lblSelectedORder
+            // 
+            this.lblSelectedORder.AutoSize = true;
+            this.lblSelectedORder.Location = new System.Drawing.Point(884, 39);
+            this.lblSelectedORder.Name = "lblSelectedORder";
+            this.lblSelectedORder.Size = new System.Drawing.Size(104, 17);
+            this.lblSelectedORder.TabIndex = 9;
+            this.lblSelectedORder.Text = "Selected Order";
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 538);
+            this.ClientSize = new System.Drawing.Size(1316, 542);
+            this.Controls.Add(this.lblSelectedORder);
+            this.Controls.Add(this.lblAllOrders);
+            this.Controls.Add(this.gvSelectedOrder);
             this.Controls.Add(this.btnApproved);
             this.Controls.Add(this.btnApproveAll);
             this.Controls.Add(this.btnApproveSelected);
@@ -100,6 +148,9 @@
             this.Text = "Orders";
             this.Load += new System.EventHandler(this.Orders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSelectedOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getOrdersListCompletedEventArgsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getOrdersListCompletedEventArgsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +163,10 @@
         private System.Windows.Forms.Button btnApproveSelected;
         private System.Windows.Forms.Button btnApproveAll;
         private System.Windows.Forms.Button btnApproved;
+        private System.Windows.Forms.DataGridView gvSelectedOrder;
+        private System.Windows.Forms.BindingSource getOrdersListCompletedEventArgsBindingSource;
+        private System.Windows.Forms.BindingSource getOrdersListCompletedEventArgsBindingSource1;
+        private System.Windows.Forms.Label lblAllOrders;
+        private System.Windows.Forms.Label lblSelectedORder;
     }
 }

@@ -110,6 +110,12 @@
   <wsdl:message name="IServer_ClearAllOrders_OutputMessage">
     <wsdl:part name="parameters" element="tns:ClearAllOrdersResponse" />
   </wsdl:message>
+  <wsdl:message name="IServer_GetShoefromOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoefromOrders" />
+  </wsdl:message>
+  <wsdl:message name="IServer_GetShoefromOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoefromOrdersResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetData" message="tns:IServer_GetData_InputMessage" />
@@ -178,6 +184,10 @@
     <wsdl:operation name="ClearAllOrders">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/ClearAllOrders" message="tns:IServer_ClearAllOrders_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/ClearAllOrdersResponse" message="tns:IServer_ClearAllOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShoefromOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetShoefromOrders" message="tns:IServer_GetShoefromOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetShoefromOrdersResponse" message="tns:IServer_GetShoefromOrders_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -328,6 +338,15 @@
     </wsdl:operation>
     <wsdl:operation name="ClearAllOrders">
       <soap:operation soapAction="http://tempuri.org/IServer/ClearAllOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoefromOrders">
+      <soap:operation soapAction="http://tempuri.org/IServer/GetShoefromOrders" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

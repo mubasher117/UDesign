@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Client
 {
@@ -30,25 +31,34 @@ namespace Client
         private void Orders_Load(object sender, EventArgs e)
         {
             localhost.Service1 s = new localhost.Service1();
-            BindingSource bs = new BindingSource();
-            bs.DataSource = s.GetOrdersList();
-            dgOrders.DataSource = bs;
+            BindingSource b = new BindingSource();
+            b.DataSource = s.GetOrdersList();
+            dgOrders.DataSource = b;
 
-            dgOrders.Columns[4].Visible = false;
             dgOrders.Columns[2].Visible = false;
             dgOrders.Columns[6].Visible = false;
 
 
-            DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
-            cmb.HeaderText = "Shoe Details";
-            cmb.MaxDropDownItems = 4;
-            dgOrders.Columns.Add(cmb);
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            dgOrders.Columns.Add(btn);
+            btn.HeaderText = "Show Shoe";
+            btn.Text = "Shoe Details";
+            btn.UseColumnTextForButtonValue = true;
             
         }
 
         private void dgOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            localhost.Service1 s = new localhost.Service1();
+            bool x = true;
+            //if (e.ColumnIndex == 9)
+            //{
+                
+                BindingSource bnd = new BindingSource();
+                bnd.DataSource = s.GetShoefromOrders(e.RowIndex, x);
+                gvSelectedOrder.DataSource = bnd;            //}
             
+          
         }
 
         private void lnkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -74,5 +84,15 @@ namespace Client
             a.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Test t = new Test();
+            t.Show();        }
     }
 }

@@ -113,8 +113,9 @@ namespace Server
 
         public int GenerateId()
         {
-            int id  = OrderDL.MaxId;
-            OrderDL.MaxId += 1;
+            int id = 0; 
+            id= OrderDL.MaxId;
+            //OrderDL.MaxId += 1;
             return id;
 
         }
@@ -154,6 +155,13 @@ namespace Server
         {
             return OrderDL.approved_orders;
         }
-        
+        public List<Shoe> GetShoefromOrders(int i)
+        {
+            List<Shoe> ret = new List<Shoe>();
+            ret.Add(OrderDL.orders[i].Shoe);
+            return ret;
+        }
+     
     }
+    
 }

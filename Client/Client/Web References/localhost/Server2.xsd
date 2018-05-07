@@ -17,7 +17,6 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DeliveryDate" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Id" type="xs:int" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Shoe" nillable="true" type="tns:Shoe" />
       <xs:element minOccurs="0" name="Status" type="xs:boolean" />
@@ -48,4 +47,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfComplaint" nillable="true" type="tns:ArrayOfComplaint" />
+  <xs:complexType name="ArrayOfShoe">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Shoe" nillable="true" type="tns:Shoe" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShoe" nillable="true" type="tns:ArrayOfShoe" />
 </xs:schema>

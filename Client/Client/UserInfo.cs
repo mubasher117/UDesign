@@ -31,17 +31,10 @@ namespace Client
             localhost.Order order = new localhost.Order();
             order.Name = txtUsername.Text;
             order.Adress = txtCNIC.Text;
-            localhost.Service1 s = new localhost.Service1();
-            bool c;
-            int i;
-            s.GenerateId(out i, out c);
-            order.Id = i;
+            order.Shoe = MyUtils.curr_shoe;
             localhost.Service1 ns = new localhost.Service1();
             ns.PlaceOrder(order);
-            
-
-
-            
+                
         }
 
         private void UserInfo_Load(object sender, EventArgs e)

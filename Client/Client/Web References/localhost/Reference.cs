@@ -63,6 +63,8 @@ namespace Client.localhost {
         
         private System.Threading.SendOrPostCallback ClearAllOrdersOperationCompleted;
         
+        private System.Threading.SendOrPostCallback GetShoefromOrdersOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -151,6 +153,9 @@ namespace Client.localhost {
         
         /// <remarks/>
         public event ClearAllOrdersCompletedEventHandler ClearAllOrdersCompleted;
+        
+        /// <remarks/>
+        public event GetShoefromOrdersCompletedEventHandler GetShoefromOrdersCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -656,6 +661,39 @@ namespace Client.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetShoefromOrders", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+        public Shoe[] GetShoefromOrders(int i, [System.Xml.Serialization.XmlIgnoreAttribute()] bool iSpecified) {
+            object[] results = this.Invoke("GetShoefromOrders", new object[] {
+                        i,
+                        iSpecified});
+            return ((Shoe[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetShoefromOrdersAsync(int i, bool iSpecified) {
+            this.GetShoefromOrdersAsync(i, iSpecified, null);
+        }
+        
+        /// <remarks/>
+        public void GetShoefromOrdersAsync(int i, bool iSpecified, object userState) {
+            if ((this.GetShoefromOrdersOperationCompleted == null)) {
+                this.GetShoefromOrdersOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetShoefromOrdersOperationCompleted);
+            }
+            this.InvokeAsync("GetShoefromOrders", new object[] {
+                        i,
+                        iSpecified}, this.GetShoefromOrdersOperationCompleted, userState);
+        }
+        
+        private void OnGetShoefromOrdersOperationCompleted(object arg) {
+            if ((this.GetShoefromOrdersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetShoefromOrdersCompleted(this, new GetShoefromOrdersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -857,10 +895,6 @@ namespace Client.localhost {
         
         private bool deliveryDateFieldSpecified;
         
-        private int idField;
-        
-        private bool idFieldSpecified;
-        
         private string nameField;
         
         private Shoe shoeField;
@@ -898,27 +932,6 @@ namespace Client.localhost {
             }
             set {
                 this.deliveryDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IdSpecified {
-            get {
-                return this.idFieldSpecified;
-            }
-            set {
-                this.idFieldSpecified = value;
             }
         }
         
@@ -1334,6 +1347,32 @@ namespace Client.localhost {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
     public delegate void ClearAllOrdersCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void GetShoefromOrdersCompletedEventHandler(object sender, GetShoefromOrdersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetShoefromOrdersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetShoefromOrdersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Shoe[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Shoe[])(this.results[0]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

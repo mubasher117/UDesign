@@ -220,4 +220,18 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetShoefromOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="i" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShoefromOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Server" minOccurs="0" name="GetShoefromOrdersResult" nillable="true" type="q11:ArrayOfShoe" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
