@@ -73,6 +73,7 @@
             this.btnRemoveLaces.TabIndex = 105;
             this.btnRemoveLaces.Text = "RemoveLaces";
             this.btnRemoveLaces.UseVisualStyleBackColor = true;
+            this.btnRemoveLaces.Click += new System.EventHandler(this.btnRemoveLaces_Click);
             // 
             // btnAddLaces
             // 
@@ -82,6 +83,7 @@
             this.btnAddLaces.TabIndex = 104;
             this.btnAddLaces.Text = "Add Laces";
             this.btnAddLaces.UseVisualStyleBackColor = true;
+            this.btnAddLaces.Click += new System.EventHandler(this.btnAddLaces_Click);
             // 
             // pbMain
             // 
@@ -101,6 +103,7 @@
             this.btnApply.TabIndex = 102;
             this.btnApply.Text = "Apply";
             this.btnApply.UseVisualStyleBackColor = true;
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
             // rbtnSide
             // 
@@ -140,6 +143,7 @@
             this.btnPink.Size = new System.Drawing.Size(40, 25);
             this.btnPink.TabIndex = 98;
             this.btnPink.UseVisualStyleBackColor = false;
+            this.btnPink.Click += new System.EventHandler(this.btnPink_Click);
             // 
             // btnYellow
             // 
@@ -149,6 +153,7 @@
             this.btnYellow.Size = new System.Drawing.Size(40, 25);
             this.btnYellow.TabIndex = 97;
             this.btnYellow.UseVisualStyleBackColor = false;
+            this.btnYellow.Click += new System.EventHandler(this.btnYellow_Click);
             // 
             // btnGreen
             // 
@@ -158,6 +163,7 @@
             this.btnGreen.Size = new System.Drawing.Size(40, 25);
             this.btnGreen.TabIndex = 96;
             this.btnGreen.UseVisualStyleBackColor = false;
+            this.btnGreen.Click += new System.EventHandler(this.btnGreen_Click);
             // 
             // btnBlack
             // 
@@ -167,6 +173,7 @@
             this.btnBlack.Size = new System.Drawing.Size(40, 25);
             this.btnBlack.TabIndex = 95;
             this.btnBlack.UseVisualStyleBackColor = false;
+            this.btnBlack.Click += new System.EventHandler(this.btnBlack_Click);
             // 
             // btnBlue
             // 
@@ -176,6 +183,7 @@
             this.btnBlue.Size = new System.Drawing.Size(40, 25);
             this.btnBlue.TabIndex = 94;
             this.btnBlue.UseVisualStyleBackColor = false;
+            this.btnBlue.Click += new System.EventHandler(this.btnBlue_Click);
             // 
             // btnSky
             // 
@@ -185,6 +193,7 @@
             this.btnSky.Size = new System.Drawing.Size(40, 25);
             this.btnSky.TabIndex = 93;
             this.btnSky.UseVisualStyleBackColor = false;
+            this.btnSky.Click += new System.EventHandler(this.btnSky_Click);
             // 
             // btnBrown
             // 
@@ -194,6 +203,7 @@
             this.btnBrown.Size = new System.Drawing.Size(40, 25);
             this.btnBrown.TabIndex = 92;
             this.btnBrown.UseVisualStyleBackColor = false;
+            this.btnBrown.Click += new System.EventHandler(this.btnBrown_Click);
             // 
             // btnGrey
             // 
@@ -203,6 +213,7 @@
             this.btnGrey.Size = new System.Drawing.Size(40, 25);
             this.btnGrey.TabIndex = 91;
             this.btnGrey.UseVisualStyleBackColor = false;
+            this.btnGrey.Click += new System.EventHandler(this.btnGrey_Click);
             // 
             // btnOrange
             // 
@@ -212,6 +223,7 @@
             this.btnOrange.Size = new System.Drawing.Size(40, 25);
             this.btnOrange.TabIndex = 90;
             this.btnOrange.UseVisualStyleBackColor = false;
+            this.btnOrange.Click += new System.EventHandler(this.btnOrange_Click);
             // 
             // btnRed
             // 
@@ -221,6 +233,7 @@
             this.btnRed.Size = new System.Drawing.Size(40, 25);
             this.btnRed.TabIndex = 89;
             this.btnRed.UseVisualStyleBackColor = false;
+            this.btnRed.Click += new System.EventHandler(this.btnRed_Click);
             // 
             // lblSelectedColor
             // 
@@ -239,6 +252,7 @@
             this.btnReset.TabIndex = 87;
             this.btnReset.Text = "Reset Changes";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // pbSide
             // 
@@ -269,6 +283,7 @@
             this.btnSendOrderToAdmin.TabIndex = 83;
             this.btnSendOrderToAdmin.Text = "Send Order \r\nTo Admin";
             this.btnSendOrderToAdmin.UseVisualStyleBackColor = true;
+            this.btnSendOrderToAdmin.Click += new System.EventHandler(this.btnSendOrderToAdmin_Click);
             // 
             // DesignerCreate
             // 

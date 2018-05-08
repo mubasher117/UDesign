@@ -31,6 +31,9 @@
             this.btnApprove = new System.Windows.Forms.Button();
             this.lnkBack = new System.Windows.Forms.LinkLabel();
             this.flDesignerDesign = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucDUpload1 = new Client.ucDUpload();
+            this.btnMoreDesigns = new System.Windows.Forms.Button();
+            this.flDesignerDesign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnApprove
@@ -56,23 +59,43 @@
             // 
             // flDesignerDesign
             // 
+            this.flDesignerDesign.Controls.Add(this.ucDUpload1);
             this.flDesignerDesign.Location = new System.Drawing.Point(13, 65);
             this.flDesignerDesign.Name = "flDesignerDesign";
-            this.flDesignerDesign.Size = new System.Drawing.Size(699, 391);
+            this.flDesignerDesign.Size = new System.Drawing.Size(698, 412);
             this.flDesignerDesign.TabIndex = 3;
             this.flDesignerDesign.Paint += new System.Windows.Forms.PaintEventHandler(this.flDesignerDesign_Paint);
+            // 
+            // ucDUpload1
+            // 
+            this.ucDUpload1.Location = new System.Drawing.Point(3, 3);
+            this.ucDUpload1.Name = "ucDUpload1";
+            this.ucDUpload1.Size = new System.Drawing.Size(197, 144);
+            this.ucDUpload1.TabIndex = 0;
+            // 
+            // btnMoreDesigns
+            // 
+            this.btnMoreDesigns.Location = new System.Drawing.Point(453, 486);
+            this.btnMoreDesigns.Name = "btnMoreDesigns";
+            this.btnMoreDesigns.Size = new System.Drawing.Size(118, 23);
+            this.btnMoreDesigns.TabIndex = 6;
+            this.btnMoreDesigns.Text = "More Designs";
+            this.btnMoreDesigns.UseVisualStyleBackColor = true;
+            this.btnMoreDesigns.Click += new System.EventHandler(this.btnMoreDesigns_Click);
             // 
             // DesignerDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 526);
+            this.Controls.Add(this.btnMoreDesigns);
             this.Controls.Add(this.btnApprove);
             this.Controls.Add(this.lnkBack);
             this.Controls.Add(this.flDesignerDesign);
             this.Name = "DesignerDesign";
             this.Text = "DesignerDesign";
             this.Load += new System.EventHandler(this.DesignerDesign_Load);
+            this.flDesignerDesign.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,5 +106,7 @@
         private System.Windows.Forms.Button btnApprove;
         private System.Windows.Forms.LinkLabel lnkBack;
         private System.Windows.Forms.FlowLayoutPanel flDesignerDesign;
+        private ucDUpload ucDUpload1;
+        private System.Windows.Forms.Button btnMoreDesigns;
     }
 }

@@ -116,6 +116,18 @@
   <wsdl:message name="IServer_GetShoefromOrders_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetShoefromOrdersResponse" />
   </wsdl:message>
+  <wsdl:message name="IServer_MoreDesigns_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoreDesigns" />
+  </wsdl:message>
+  <wsdl:message name="IServer_MoreDesigns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoreDesignsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServer_SeeMoreDesigns_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeeMoreDesigns" />
+  </wsdl:message>
+  <wsdl:message name="IServer_SeeMoreDesigns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeeMoreDesignsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServer">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetData" message="tns:IServer_GetData_InputMessage" />
@@ -188,6 +200,14 @@
     <wsdl:operation name="GetShoefromOrders">
       <wsdl:input wsaw:Action="http://tempuri.org/IServer/GetShoefromOrders" message="tns:IServer_GetShoefromOrders_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServer/GetShoefromOrdersResponse" message="tns:IServer_GetShoefromOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoreDesigns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/MoreDesigns" message="tns:IServer_MoreDesigns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/MoreDesignsResponse" message="tns:IServer_MoreDesigns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeeMoreDesigns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServer/SeeMoreDesigns" message="tns:IServer_SeeMoreDesigns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServer/SeeMoreDesignsResponse" message="tns:IServer_SeeMoreDesigns_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServer" type="tns:IServer">
@@ -347,6 +367,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetShoefromOrders">
       <soap:operation soapAction="http://tempuri.org/IServer/GetShoefromOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoreDesigns">
+      <soap:operation soapAction="http://tempuri.org/IServer/MoreDesigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeeMoreDesigns">
+      <soap:operation soapAction="http://tempuri.org/IServer/SeeMoreDesigns" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

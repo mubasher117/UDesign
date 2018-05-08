@@ -65,6 +65,10 @@ namespace Client.localhost {
         
         private System.Threading.SendOrPostCallback GetShoefromOrdersOperationCompleted;
         
+        private System.Threading.SendOrPostCallback MoreDesignsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SeeMoreDesignsOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -156,6 +160,12 @@ namespace Client.localhost {
         
         /// <remarks/>
         public event GetShoefromOrdersCompletedEventHandler GetShoefromOrdersCompleted;
+        
+        /// <remarks/>
+        public event MoreDesignsCompletedEventHandler MoreDesignsCompleted;
+        
+        /// <remarks/>
+        public event SeeMoreDesignsCompletedEventHandler SeeMoreDesignsCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -690,6 +700,63 @@ namespace Client.localhost {
             if ((this.GetShoefromOrdersCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetShoefromOrdersCompleted(this, new GetShoefromOrdersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/MoreDesigns", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void MoreDesigns([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Shoe shoe) {
+            this.Invoke("MoreDesigns", new object[] {
+                        shoe});
+        }
+        
+        /// <remarks/>
+        public void MoreDesignsAsync(Shoe shoe) {
+            this.MoreDesignsAsync(shoe, null);
+        }
+        
+        /// <remarks/>
+        public void MoreDesignsAsync(Shoe shoe, object userState) {
+            if ((this.MoreDesignsOperationCompleted == null)) {
+                this.MoreDesignsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnMoreDesignsOperationCompleted);
+            }
+            this.InvokeAsync("MoreDesigns", new object[] {
+                        shoe}, this.MoreDesignsOperationCompleted, userState);
+        }
+        
+        private void OnMoreDesignsOperationCompleted(object arg) {
+            if ((this.MoreDesignsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.MoreDesignsCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IServer/SeeMoreDesigns", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Server")]
+        public Shoe[] SeeMoreDesigns() {
+            object[] results = this.Invoke("SeeMoreDesigns", new object[0]);
+            return ((Shoe[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SeeMoreDesignsAsync() {
+            this.SeeMoreDesignsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void SeeMoreDesignsAsync(object userState) {
+            if ((this.SeeMoreDesignsOperationCompleted == null)) {
+                this.SeeMoreDesignsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSeeMoreDesignsOperationCompleted);
+            }
+            this.InvokeAsync("SeeMoreDesigns", new object[0], this.SeeMoreDesignsOperationCompleted, userState);
+        }
+        
+        private void OnSeeMoreDesignsOperationCompleted(object arg) {
+            if ((this.SeeMoreDesignsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SeeMoreDesignsCompleted(this, new SeeMoreDesignsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1361,6 +1428,36 @@ namespace Client.localhost {
         private object[] results;
         
         internal GetShoefromOrdersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public Shoe[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((Shoe[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void MoreDesignsCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void SeeMoreDesignsCompletedEventHandler(object sender, SeeMoreDesignsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SeeMoreDesignsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SeeMoreDesignsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

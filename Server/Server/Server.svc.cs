@@ -161,6 +161,16 @@ namespace Server
             ret.Add(OrderDL.orders[i].Shoe);
             return ret;
         }
+
+        public void MoreDesigns(Shoe shoe)
+        {
+            DesignDL o = new DesignDL();
+            o.AddToMoreDesigns(shoe);
+        }
+        public List<Shoe> SeeMoreDesigns()
+        {
+            return DesignDL.MoreDesigns;
+       }
      
     }
     

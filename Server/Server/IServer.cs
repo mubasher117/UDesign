@@ -60,7 +60,12 @@ namespace Server
         void ClearAllOrders();
         [OperationContract]
         List<Shoe> GetShoefromOrders(int i);
-    
+        [OperationContract]
+        void MoreDesigns(Shoe shoe);
+        [OperationContract]
+        List<Shoe> SeeMoreDesigns();
+
+
     }
 
 

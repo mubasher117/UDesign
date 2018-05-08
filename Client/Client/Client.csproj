@@ -114,6 +114,12 @@
     <Compile Include="Orders.Designer.cs">
       <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrecustomizedDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrecustomizedDetails.Designer.cs">
+      <DependentUpon>PrecustomizedDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs">
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Orders.resx">
       <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrecustomizedDetails.resx">
+      <DependentUpon>PrecustomizedDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
