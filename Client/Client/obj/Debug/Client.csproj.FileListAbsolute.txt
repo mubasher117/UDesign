@@ -120,3 +120,4 @@ C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.pdb
 D:\UDesign\Client\Client\obj\Debug\Client.Test.resources
 C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.ApprovedOrders.resources
 C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.Test.resources
+C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources

@@ -93,7 +93,7 @@
             // 
             // btnDesignerDesign
             // 
-            this.btnDesignerDesign.Location = new System.Drawing.Point(427, 297);
+            this.btnDesignerDesign.Location = new System.Drawing.Point(427, 296);
             this.btnDesignerDesign.Name = "btnDesignerDesign";
             this.btnDesignerDesign.Size = new System.Drawing.Size(189, 35);
             this.btnDesignerDesign.TabIndex = 18;

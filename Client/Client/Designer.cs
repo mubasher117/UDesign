@@ -12,9 +12,19 @@ namespace Client
 {
     public partial class Designer : Form
     {
-        public Designer()
+        private Designer()
         {
             InitializeComponent();
+        }
+        private static Designer L = null;
+
+        public static Designer GetInstance()
+        {
+            if (L == null)
+            {
+                return new Designer();
+            }
+            return L;
         }
 
         private void lnkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -32,6 +42,11 @@ namespace Client
         }
 
         private void btnUploadDesign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Designer_Load(object sender, EventArgs e)
         {
 
         }

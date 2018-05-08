@@ -52,6 +52,7 @@
             this.pbSide = new System.Windows.Forms.PictureBox();
             this.lblAvailableColors = new System.Windows.Forms.Label();
             this.btnSendOrderToAdmin = new System.Windows.Forms.Button();
+            this.lnkBack = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSide)).BeginInit();
             this.SuspendLayout();
@@ -276,20 +277,32 @@
             // btnSendOrderToAdmin
             // 
             this.btnSendOrderToAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSendOrderToAdmin.Location = new System.Drawing.Point(608, 439);
+            this.btnSendOrderToAdmin.Location = new System.Drawing.Point(594, 476);
             this.btnSendOrderToAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnSendOrderToAdmin.Name = "btnSendOrderToAdmin";
-            this.btnSendOrderToAdmin.Size = new System.Drawing.Size(133, 67);
+            this.btnSendOrderToAdmin.Size = new System.Drawing.Size(158, 33);
             this.btnSendOrderToAdmin.TabIndex = 83;
-            this.btnSendOrderToAdmin.Text = "Send Order \r\nTo Admin";
+            this.btnSendOrderToAdmin.Text = "Send To Admin";
             this.btnSendOrderToAdmin.UseVisualStyleBackColor = true;
             this.btnSendOrderToAdmin.Click += new System.EventHandler(this.btnSendOrderToAdmin_Click);
+            // 
+            // lnkBack
+            // 
+            this.lnkBack.AutoSize = true;
+            this.lnkBack.Location = new System.Drawing.Point(681, 9);
+            this.lnkBack.Name = "lnkBack";
+            this.lnkBack.Size = new System.Drawing.Size(39, 17);
+            this.lnkBack.TabIndex = 107;
+            this.lnkBack.TabStop = true;
+            this.lnkBack.Text = "Back";
+            this.lnkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkBack_LinkClicked);
             // 
             // DesignerCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 532);
+            this.Controls.Add(this.lnkBack);
             this.Controls.Add(this.lblLaces);
             this.Controls.Add(this.btnRemoveLaces);
             this.Controls.Add(this.btnAddLaces);
@@ -348,5 +361,6 @@
         private System.Windows.Forms.PictureBox pbSide;
         private System.Windows.Forms.Label lblAvailableColors;
         private System.Windows.Forms.Button btnSendOrderToAdmin;
+        private System.Windows.Forms.LinkLabel lnkBack;
     }
 }

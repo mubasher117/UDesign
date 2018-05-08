@@ -1,6 +1,6 @@
 ﻿namespace Client
 {
-    partial class PrecustomizedDetails
+    partial class Precustomized
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.gvMorePrecustomized = new System.Windows.Forms.DataGridView();
+            this.lnkBack = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMorePrecustomized)).BeginInit();
             this.SuspendLayout();
             // 
-            // PrecustomizedDetails
+            // gvMorePrecustomized
+            // 
+            this.gvMorePrecustomized.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvMorePrecustomized.Location = new System.Drawing.Point(41, 491);
+            this.gvMorePrecustomized.Name = "gvMorePrecustomized";
+            this.gvMorePrecustomized.RowTemplate.Height = 24;
+            this.gvMorePrecustomized.Size = new System.Drawing.Size(761, 162);
+            this.gvMorePrecustomized.TabIndex = 0;
+            // 
+            // lnkBack
+            // 
+            this.lnkBack.AutoSize = true;
+            this.lnkBack.Location = new System.Drawing.Point(792, 9);
+            this.lnkBack.Name = "lnkBack";
+            this.lnkBack.Size = new System.Drawing.Size(39, 17);
+            this.lnkBack.TabIndex = 1;
+            this.lnkBack.TabStop = true;
+            this.lnkBack.Text = "Back";
+            this.lnkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkBack_LinkClicked);
+            // 
+            // Precustomized
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 512);
-            this.Name = "PrecustomizedDetails";
-            this.Text = "PrecustomizedDetails";
+            this.ClientSize = new System.Drawing.Size(876, 721);
+            this.Controls.Add(this.lnkBack);
+            this.Controls.Add(this.gvMorePrecustomized);
+            this.Name = "Precustomized";
+            this.Text = "Precustomized";
             this.Load += new System.EventHandler(this.PrecustomizedDetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvMorePrecustomized)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView gvMorePrecustomized;
+        private System.Windows.Forms.LinkLabel lnkBack;
     }
 }

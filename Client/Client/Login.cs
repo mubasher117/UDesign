@@ -46,7 +46,7 @@ namespace Client
                 if (valid)
                 {
                     MessageBox.Show("logged in");
-                    DesignerUpload d = DesignerUpload.GetInstance();
+                    Designer d = Designer.GetInstance();
                     d.Show();
                     this.Hide();
 

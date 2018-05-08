@@ -50,9 +50,7 @@ namespace Client
 
         private void btnMoreDesigns_Click(object sender, EventArgs e)
         {
-            PrecustomizedDetails precustomizedDetails = PrecustomizedDetails.GetInstance();
-            precustomizedDetails.Show();
-            this.Hide();
+            
         }
     }
 }

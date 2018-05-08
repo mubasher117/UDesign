@@ -53,5 +53,10 @@ namespace Client
             h.Show();
             this.Hide();
         }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -109,6 +109,7 @@
             this.Controls.Add(this.gbHomeButtons);
             this.Name = "Designer";
             this.Text = "Designer";
+            this.Load += new System.EventHandler(this.Designer_Load);
             this.gbHomeButtons.ResumeLayout(false);
             this.gbHomeButtons.PerformLayout();
             this.ResumeLayout(false);

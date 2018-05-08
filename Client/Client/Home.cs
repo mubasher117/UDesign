@@ -67,5 +67,13 @@ namespace Client
             this.Hide();
 
         }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Precustomized precustomized = Precustomized.GetInstance();
+            precustomized.Show();
+            this.Hide();
+
+        }
     }
 }
