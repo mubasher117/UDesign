@@ -277,7 +277,7 @@
             // btnSendOrderToAdmin
             // 
             this.btnSendOrderToAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSendOrderToAdmin.Location = new System.Drawing.Point(594, 476);
+            this.btnSendOrderToAdmin.Location = new System.Drawing.Point(548, 477);
             this.btnSendOrderToAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnSendOrderToAdmin.Name = "btnSendOrderToAdmin";
             this.btnSendOrderToAdmin.Size = new System.Drawing.Size(158, 33);

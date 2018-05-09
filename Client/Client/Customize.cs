@@ -28,8 +28,8 @@ namespace Client
             return L;
         }
 
-        public string MainColor;
-        public string SideColor;
+        public string MainColor = "No Color";
+        public string SideColor= "No Color";
         public string Laces = "No Laces";
         private void lnkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -191,17 +191,30 @@ namespace Client
 
         private void btnSendOrder_Click(object sender, EventArgs e)
         {
-            localhost.Shoe sh = new localhost.Shoe();
-            sh.MainColor = MainColor;
-            sh.SideColor = SideColor;
-            sh.Brand = cmbBrands.Text;
-            sh.Laces = Laces;
 
-            MyUtils.curr_shoe = sh;
+            if (MainColor == "No Color" || SideColor == "No Color")
+            {
+                MessageBox.Show("Select Both Colors");
+            }
+            else if (string.IsNullOrWhiteSpace(cmbBrands.Text))
+            {
+                MessageBox.Show("Select Brand");
+            }
+            else
+            {
 
-            UserInfo u = UserInfo.GetInstance();
-            u.Show();
-            this.Hide();
+                localhost.Shoe sh = new localhost.Shoe();
+                sh.MainColor = MainColor;
+                sh.SideColor = SideColor;
+                sh.Brand = cmbBrands.Text;
+                sh.Laces = Laces;
+
+                MyUtils.curr_shoe = sh;
+
+                UserInfo u = UserInfo.GetInstance();
+                u.Show();
+                this.Hide();
+            }
 
         }
 

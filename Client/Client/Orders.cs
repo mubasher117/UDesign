@@ -37,6 +37,7 @@ namespace Client
 
             dgOrders.Columns[2].Visible = false;
             dgOrders.Columns[6].Visible = false;
+            dgOrders.Columns[4].Visible = false;
 
 
             DataGridViewButtonColumn btn = new DataGridViewButtonColumn();

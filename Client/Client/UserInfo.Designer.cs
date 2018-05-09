@@ -157,9 +157,9 @@
             this.lblUsername.Location = new System.Drawing.Point(118, 135);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(77, 17);
+            this.lblUsername.Size = new System.Drawing.Size(49, 17);
             this.lblUsername.TabIndex = 24;
-            this.lblUsername.Text = "Username:";
+            this.lblUsername.Text = "Name:";
             // 
             // txtAddress
             // 

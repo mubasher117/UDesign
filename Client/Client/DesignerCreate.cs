@@ -37,12 +37,19 @@ namespace Client
 
         private void btnSendOrderToAdmin_Click(object sender, EventArgs e)
         {
-            localhost.Shoe sh = new localhost.Shoe();
-            sh.MainColor = MainColor;
-            sh.SideColor = SideColor;
-            sh.Laces = Laces;
-            localhost.Service1 service1 = new localhost.Service1();
-            service1.MoreDesigns(sh);
+            if (MainColor == "No Color" || SideColor == "No Color")
+            {
+                MessageBox.Show("Select Both Colors");
+            }
+            else
+            {
+                localhost.Shoe sh = new localhost.Shoe();
+                sh.MainColor = MainColor;
+                sh.SideColor = SideColor;
+                sh.Laces = Laces;
+                localhost.Service1 service1 = new localhost.Service1();
+                service1.MoreDesigns(sh);
+            }
         }
 
         private void btnApply_Click(object sender, EventArgs e)
@@ -190,6 +197,7 @@ namespace Client
                     MainColor = "Yellow";
                 }
             }
+
 
 
         }

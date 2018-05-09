@@ -73,6 +73,10 @@ namespace Client
                 }
 
             }
+            else
+            {
+                MessageBox.Show("Select Admin or Designer");
+            }
 
         }
 

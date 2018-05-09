@@ -28,12 +28,32 @@ namespace Client
         }
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
-            localhost.Order order = new localhost.Order();
-            order.Name = txtUsername.Text;
-            order.Adress = txtCNIC.Text;
-            order.Shoe = MyUtils.curr_shoe;
-            localhost.Service1 ns = new localhost.Service1();
-            ns.PlaceOrder(order);
+            if (string.IsNullOrEmpty(txtUsername.Text))
+            {
+                MessageBox.Show("Enetr Name");
+            }
+            if (string.IsNullOrEmpty(txtCNIC.Text))
+            {
+                MessageBox.Show("Enter your CNIC");
+            }
+            
+            if (string.IsNullOrEmpty(txtAddress.Text))
+            {
+                MessageBox.Show("Enter postal address");
+            }
+            if (!chkYes.Checked)
+            {
+                MessageBox.Show("Approve your status");
+            }
+            else
+            {
+                localhost.Order order = new localhost.Order();
+                order.Name = txtUsername.Text;
+                order.Adress = txtAddress.Text;
+                order.Shoe = MyUtils.curr_shoe;
+                localhost.Service1 ns = new localhost.Service1();
+                ns.PlaceOrder(order);
+            }
                 
         }
 
