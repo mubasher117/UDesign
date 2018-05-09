@@ -290,6 +290,7 @@
             this.lnkPreCustomizedGroup.TabIndex = 13;
             this.lnkPreCustomizedGroup.TabStop = true;
             this.lnkPreCustomizedGroup.Text = "Pre Customized";
+            this.lnkPreCustomizedGroup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPreCustomizedGroup_LinkClicked);
             // 
             // lnkHome
             // 
@@ -311,6 +312,7 @@
             this.lnkAddComplaint.TabIndex = 11;
             this.lnkAddComplaint.TabStop = true;
             this.lnkAddComplaint.Text = "Add Complaint";
+            this.lnkAddComplaint.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAddComplaint_LinkClicked);
             // 
             // lblAvailableColors
             // 
@@ -390,6 +392,7 @@
             this.Controls.Add(this.cmbBrands);
             this.Name = "Customize";
             this.Text = "Customize";
+            this.Load += new System.EventHandler(this.Customize_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSide)).EndInit();
             this.gbHomeButtons.ResumeLayout(false);

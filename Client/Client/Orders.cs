@@ -23,28 +23,17 @@ namespace Client
         {
             if (L == null)
             {
+                
                 return new Orders();
+
             }
+            
             return L;
         }
 
         private void Orders_Load(object sender, EventArgs e)
         {
-            localhost.Service1 s = new localhost.Service1();
-            BindingSource b = new BindingSource();
-            b.DataSource = s.GetOrdersList();
-            dgOrders.DataSource = b;
-
-            dgOrders.Columns[2].Visible = false;
-            dgOrders.Columns[6].Visible = false;
-            dgOrders.Columns[4].Visible = false;
-
-
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            dgOrders.Columns.Add(btn);
-            btn.HeaderText = "Show Shoe";
-            btn.Text = "Shoe Details";
-            btn.UseColumnTextForButtonValue = true;
+            
             
         }
 
@@ -76,7 +65,7 @@ namespace Client
             ApprovedOrders a = ApprovedOrders.GetInstance();
             a.Show();
             this.Hide();
-            s.ClearAllOrders();
+            dgOrders.DataSource = null;
         }
 
         private void btnApproved_Click(object sender, EventArgs e)
@@ -94,6 +83,27 @@ namespace Client
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Test t = new Test();
-            t.Show();        }
+            t.Show();
+        }
+
+        public void LoadOrders()
+        {
+            dgOrders.DataSource = null;
+            localhost.Service1 s = new localhost.Service1();
+            BindingSource b = new BindingSource();
+            b.DataSource = s.GetOrdersList();
+            dgOrders.DataSource = b;
+
+            dgOrders.Columns[2].Visible = false;
+            dgOrders.Columns[6].Visible = false;
+            dgOrders.Columns[4].Visible = false;
+
+
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            dgOrders.Columns.Add(btn);
+            btn.HeaderText = "Show Shoe";
+            btn.Text = "Shoe Details";
+            btn.UseColumnTextForButtonValue = true;
+        }
     }
 }

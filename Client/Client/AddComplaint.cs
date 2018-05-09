@@ -49,5 +49,10 @@ namespace Client
 
             
         }
+
+        private void AddComplaint_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

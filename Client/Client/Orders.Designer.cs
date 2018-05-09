@@ -62,7 +62,7 @@
             this.dgOrders.Location = new System.Drawing.Point(12, 59);
             this.dgOrders.Name = "dgOrders";
             this.dgOrders.RowTemplate.Height = 24;
-            this.dgOrders.Size = new System.Drawing.Size(869, 398);
+            this.dgOrders.Size = new System.Drawing.Size(737, 398);
             this.dgOrders.TabIndex = 2;
             this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
             // 
@@ -98,10 +98,10 @@
             // gvSelectedOrder
             // 
             this.gvSelectedOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvSelectedOrder.Location = new System.Drawing.Point(887, 59);
+            this.gvSelectedOrder.Location = new System.Drawing.Point(755, 59);
             this.gvSelectedOrder.Name = "gvSelectedOrder";
             this.gvSelectedOrder.RowTemplate.Height = 24;
-            this.gvSelectedOrder.Size = new System.Drawing.Size(417, 140);
+            this.gvSelectedOrder.Size = new System.Drawing.Size(549, 140);
             this.gvSelectedOrder.TabIndex = 7;
             this.gvSelectedOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

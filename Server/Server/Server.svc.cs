@@ -141,10 +141,7 @@ namespace Server
         }
         public void ApproveAllOrders()
         {
-           foreach (Order o in OrderDL.orders)
-            {
-             //   OrderDL.orders.
-            }
+            OrderDL.approved_orders = OrderDL.orders;
 
         }
         public void ClearAllOrders()

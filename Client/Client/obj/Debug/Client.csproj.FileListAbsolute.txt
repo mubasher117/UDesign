@@ -122,3 +122,7 @@ C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.ApprovedOrders.res
 C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.Test.resources
 C:\Users\92302\Desktop\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources
 D:\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources
+C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.ApprovedOrders.resources
+C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources
+C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.Test.resources
+C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.UserComplaints.resources

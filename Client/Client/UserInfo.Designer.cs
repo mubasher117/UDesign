@@ -67,6 +67,7 @@
             this.lnkCustomize.TabIndex = 14;
             this.lnkCustomize.TabStop = true;
             this.lnkCustomize.Text = "Cusomize";
+            this.lnkCustomize.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCustomize_LinkClicked);
             // 
             // lnkPreCustomizedGroup
             // 
@@ -77,6 +78,7 @@
             this.lnkPreCustomizedGroup.TabIndex = 13;
             this.lnkPreCustomizedGroup.TabStop = true;
             this.lnkPreCustomizedGroup.Text = "Pre Customized";
+            this.lnkPreCustomizedGroup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPreCustomizedGroup_LinkClicked);
             // 
             // lnkHome
             // 
@@ -98,6 +100,7 @@
             this.lnkAddComplaint.TabIndex = 11;
             this.lnkAddComplaint.TabStop = true;
             this.lnkAddComplaint.Text = "Add Complaint";
+            this.lnkAddComplaint.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAddComplaint_LinkClicked);
             // 
             // chkNo
             // 

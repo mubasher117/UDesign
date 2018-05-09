@@ -144,6 +144,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "AddComplaint";
             this.Text = "AddComplaint";
+            this.Load += new System.EventHandler(this.AddComplaint_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

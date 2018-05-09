@@ -68,5 +68,26 @@ namespace Client
             h.Show();
             this.Hide();
         }
+
+        private void lnkAddComplaint_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddComplaint login = AddComplaint.GetInstance();
+            login.Show();
+            this.Hide();
+        }
+
+        private void lnkCustomize_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Customize login = Customize.GetInstance();
+            login.Show();
+            this.Hide();
+        }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Precustomized login = Precustomized.GetInstance();
+            login.Show();
+            this.Hide();
+        }
     }
 }

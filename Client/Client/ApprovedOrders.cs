@@ -35,10 +35,16 @@ namespace Client
 
         private void ApprovedOrders_Load(object sender, EventArgs e)
         {
+                        
+        }
+
+        public void LoadApprovedOrders()
+        {
+            gvApprovedOrders.DataSource = null;
             localhost.Service1 s = new localhost.Service1();
             BindingSource bs = new BindingSource();
             bs.DataSource = s.GetApprovedOrders();
-            gvApprovedOrders.DataSource = bs;            
+            gvApprovedOrders.DataSource = bs;
         }
     }
 }

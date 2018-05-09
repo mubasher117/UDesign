@@ -34,6 +34,7 @@ namespace Client
         private void btnOrders_Click(object sender, EventArgs e)
         {
             Orders h = Orders.GetInstance();
+            h.LoadOrders();
             h.Show();
             this.Hide();
         }
@@ -62,6 +63,13 @@ namespace Client
         private void btnComplaints_Click(object sender, EventArgs e)
         {
             UserComplaints h = UserComplaints.GetInstance();
+            h.Show();
+            this.Hide();
+        }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Precustomized h = Precustomized.GetInstance();
             h.Show();
             this.Hide();
         }

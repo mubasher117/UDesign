@@ -287,5 +287,24 @@ namespace Client
         {
             btnSelectedColor.BackColor = System.Drawing.Color.Pink;
         }
+
+        private void Customize_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lnkAddComplaint_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddComplaint login = AddComplaint.GetInstance();
+            login.Show();
+            this.Hide();
+        }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Precustomized h = Precustomized.GetInstance();
+            h.Show();
+            this.Hide();
+        }
     }
 }

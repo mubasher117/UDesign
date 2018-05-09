@@ -50,5 +50,19 @@ namespace Client
         {
 
         }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Precustomized login = Precustomized.GetInstance();
+            login.Show();
+            this.Hide();
+        }
+
+        private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = Login.GetInstance();
+            login.Show();
+            this.Hide();
+        }
     }
 }

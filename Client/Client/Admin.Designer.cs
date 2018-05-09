@@ -69,6 +69,7 @@
             this.lnkPreCustomizedGroup.TabIndex = 13;
             this.lnkPreCustomizedGroup.TabStop = true;
             this.lnkPreCustomizedGroup.Text = "Pre Customized";
+            this.lnkPreCustomizedGroup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPreCustomizedGroup_LinkClicked);
             // 
             // lnkHome
             // 

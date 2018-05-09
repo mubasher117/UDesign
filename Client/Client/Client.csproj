@@ -128,12 +128,6 @@
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCDesignerUploads.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCDesignerUploads.Designer.cs">
-      <DependentUpon>UCDesignerUploads.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserComplaints.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,9 +193,6 @@
     </Compile>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UCDesignerUploads.resx">
-      <DependentUpon>UCDesignerUploads.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserComplaints.resx">
       <DependentUpon>UserComplaints.cs</DependentUpon>
