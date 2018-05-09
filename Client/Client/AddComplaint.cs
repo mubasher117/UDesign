@@ -35,17 +35,30 @@ namespace Client
 
         private void btnAddComplaint_Click(object sender, EventArgs e)
         {
-            localhost.Complaint complaint = new localhost.Complaint();
-            complaint.Name = txtName.Text;
-            complaint.Cell = txtMobileNo.Text;
-            complaint.Email = txtEmail.Text;
-            complaint.Complaint_Text = txtComplaint.Text;
+            if (string.IsNullOrWhiteSpace(txtName.Text) || string.IsNullOrWhiteSpace(txtMobileNo.Text) ||
+                string.IsNullOrWhiteSpace(txtComplaint.Text))
+            {
+                MessageBox.Show("Fill all necessary information");
+            }
+            else
+            {
+                localhost.Complaint complaint = new localhost.Complaint();
+                complaint.Name = txtName.Text;
+                complaint.Cell = txtMobileNo.Text;
+                complaint.Email = txtEmail.Text;
+                complaint.Complaint_Text = txtComplaint.Text;
 
-            localhost.Service1 s = new localhost.Service1();
-            s.AddComplaint(complaint);
+                localhost.Service1 s = new localhost.Service1();
+                s.AddComplaint(complaint);
 
 
-            MessageBox.Show("Your complaint has been sent.");
+                MessageBox.Show("Your complaint has been sent");
+
+                txtName.Text = null;
+                txtMobileNo.Text = null;
+                txtEmail.Text = null;
+                txtComplaint.Text = null;
+            }
 
             
         }
