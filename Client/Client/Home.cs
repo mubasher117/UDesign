@@ -71,6 +71,7 @@ namespace Client
         private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Precustomized precustomized = Precustomized.GetInstance();
+            precustomized.LoadPrecustomizedDetails();
             precustomized.Show();
             this.Hide();
 

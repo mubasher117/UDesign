@@ -53,6 +53,8 @@ namespace Client
                 order.Shoe = MyUtils.curr_shoe;
                 localhost.Service1 ns = new localhost.Service1();
                 ns.PlaceOrder(order);
+
+                MessageBox.Show("Your order has been placed");
             }
                 
         }
@@ -86,6 +88,7 @@ namespace Client
         private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Precustomized login = Precustomized.GetInstance();
+            login.LoadPrecustomizedDetails();
             login.Show();
             this.Hide();
         }

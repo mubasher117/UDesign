@@ -110,7 +110,6 @@ C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Home.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Login.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Orders.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Properties.Resources.resources
-C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.ucDUpload.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.UserComplaints.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.UserInfo.resources
 C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
@@ -126,3 +125,5 @@ C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.ApprovedOrders.res
 C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources
 C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.Test.resources
 C:\Users\daimj\Desktop\UDesign\Client\Client\obj\Debug\Client.UserComplaints.resources
+C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Precustomized.resources
+C:\Users\shero\Desktop\UDesign\Client\Client\obj\Debug\Client.Test.resources

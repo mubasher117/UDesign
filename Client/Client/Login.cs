@@ -86,5 +86,10 @@ namespace Client
             h.Show();
             this.Hide();
         }
+
+        private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -17,7 +17,6 @@ namespace Server
         [DataMember]
         public string Password { get => password; set => password = value; }
 
-        
-        
+
     }
 }

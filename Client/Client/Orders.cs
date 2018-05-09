@@ -71,6 +71,7 @@ namespace Client
         private void btnApproved_Click(object sender, EventArgs e)
         {
             ApprovedOrders a = ApprovedOrders.GetInstance();
+            a.LoadApprovedOrders();
             a.Show();
             this.Hide();
         }

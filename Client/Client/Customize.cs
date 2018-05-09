@@ -303,6 +303,7 @@ namespace Client
         private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Precustomized h = Precustomized.GetInstance();
+            h.LoadPrecustomizedDetails();
             h.Show();
             this.Hide();
         }

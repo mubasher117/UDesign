@@ -31,7 +31,6 @@
             this.rbtnDesigner = new System.Windows.Forms.RadioButton();
             this.rbtnAdmin = new System.Windows.Forms.RadioButton();
             this.gbHomeButtons = new System.Windows.Forms.GroupBox();
-            this.lnkPreCustomizedGroup = new System.Windows.Forms.LinkLabel();
             this.lnkHome = new System.Windows.Forms.LinkLabel();
             this.lnkPassword = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,23 +64,12 @@
             // 
             // gbHomeButtons
             // 
-            this.gbHomeButtons.Controls.Add(this.lnkPreCustomizedGroup);
             this.gbHomeButtons.Controls.Add(this.lnkHome);
             this.gbHomeButtons.Location = new System.Drawing.Point(67, 39);
             this.gbHomeButtons.Name = "gbHomeButtons";
             this.gbHomeButtons.Size = new System.Drawing.Size(527, 49);
             this.gbHomeButtons.TabIndex = 26;
             this.gbHomeButtons.TabStop = false;
-            // 
-            // lnkPreCustomizedGroup
-            // 
-            this.lnkPreCustomizedGroup.AutoSize = true;
-            this.lnkPreCustomizedGroup.Location = new System.Drawing.Point(166, 9);
-            this.lnkPreCustomizedGroup.Name = "lnkPreCustomizedGroup";
-            this.lnkPreCustomizedGroup.Size = new System.Drawing.Size(107, 17);
-            this.lnkPreCustomizedGroup.TabIndex = 13;
-            this.lnkPreCustomizedGroup.TabStop = true;
-            this.lnkPreCustomizedGroup.Text = "Pre Customized";
             // 
             // lnkHome
             // 
@@ -168,7 +156,6 @@
         private System.Windows.Forms.RadioButton rbtnDesigner;
         private System.Windows.Forms.RadioButton rbtnAdmin;
         private System.Windows.Forms.GroupBox gbHomeButtons;
-        private System.Windows.Forms.LinkLabel lnkPreCustomizedGroup;
         private System.Windows.Forms.LinkLabel lnkHome;
         private System.Windows.Forms.Label lnkPassword;
         private System.Windows.Forms.Label label1;

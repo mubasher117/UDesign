@@ -54,6 +54,7 @@ namespace Client
         private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Precustomized login = Precustomized.GetInstance();
+            login.LoadPrecustomizedDetails();
             login.Show();
             this.Hide();
         }

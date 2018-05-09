@@ -43,12 +43,15 @@ namespace Client
             }
             else
             {
+                
                 localhost.Shoe sh = new localhost.Shoe();
                 sh.MainColor = MainColor;
                 sh.SideColor = SideColor;
                 sh.Laces = Laces;
                 localhost.Service1 service1 = new localhost.Service1();
                 service1.MoreDesigns(sh);
+
+                MessageBox.Show("Design has been sent to Admin");
             }
         }
 

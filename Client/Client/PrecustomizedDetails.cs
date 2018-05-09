@@ -28,10 +28,7 @@ namespace Client
         }
         private void PrecustomizedDetails_Load(object sender, EventArgs e)
         {
-            localhost.Service1 s = new localhost.Service1();
-            BindingSource b = new BindingSource();
-            b.DataSource = s.SeeMoreDesigns();
-            gvMorePrecustomized.DataSource = b;
+            
         }
 
         private void lnkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -39,6 +36,13 @@ namespace Client
             Home home =Home.GetInstance();
             home.Show();
             this.Hide();
+        }
+        public void LoadPrecustomizedDetails()
+        {
+            localhost.Service1 s = new localhost.Service1();
+            BindingSource b = new BindingSource();
+            b.DataSource = s.SeeMoreDesigns();
+            gvMorePrecustomized.DataSource = b;
         }
     }
 }
