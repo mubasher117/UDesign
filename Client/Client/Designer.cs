@@ -43,7 +43,9 @@ namespace Client
 
         private void btnUploadDesign_Click(object sender, EventArgs e)
         {
-
+            DesignerUpload designerUpload = DesignerUpload.GetInstance();
+            designerUpload.Show();
+            this.Hide();
         }
 
         private void Designer_Load(object sender, EventArgs e)
