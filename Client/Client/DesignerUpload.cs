@@ -56,7 +56,8 @@ namespace Client
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-
+            pbSelectedImage.Image = Client.Properties.Resources.ShoeTemplate;
+            MessageBox.Show("Your Design has been uploaded");
         }
 
         private void lnkPreCustomizedGroup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
