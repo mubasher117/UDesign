@@ -28,7 +28,8 @@ namespace Client
         }
         private void PrecustomizedDetails_Load(object sender, EventArgs e)
         {
-            
+
+           
         }
 
         private void lnkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -43,6 +44,17 @@ namespace Client
             BindingSource b = new BindingSource();
             b.DataSource = s.SeeMoreDesigns();
             gvMorePrecustomized.DataSource = b;
+        }
+
+        public void LoadPrecustomized()
+        {
+            PictureBox p = new PictureBox();
+            p.Image = Client.Properties.Resources.StylishShoe1;
+
+            PictureBox p2 = new PictureBox();
+            p2.Image = Client.Properties.Resources.StylishShoe2;
+            flPrecustomized.Controls.Add(p);
+            flPrecustomized.Controls.Add(p2);
         }
     }
 }

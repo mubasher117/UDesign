@@ -136,32 +136,29 @@
   <data name="ShoeOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeOrange.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ShoeSky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoeSky.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ShoeBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeBlue.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ShoeGreenFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoeGreenFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ShoeRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoeRed.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShoeYellowFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeYellowFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ShoeRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoeRed.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ShoeOrangeFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeOrangeFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ShoeBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoeBrown.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShoeBrownFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeBrownFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ShoeGreenFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoeGreenFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ShoeTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeTemplate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ShoePinkFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoePinkFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShoeGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeGrey.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +169,12 @@
   <data name="ShoeGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeGreen.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ShoeTemplateFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoeTemplateFront1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShoeBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoeBrown.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ShoeBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoeBlack.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,10 +184,13 @@
   <data name="ShoePink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShoePink.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShoeSky" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoeSky.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ShoePinkFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShoePinkFront.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ShoeTemplateFront" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ShoeTemplateFront1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StylishShoe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StylishShoe1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StylishShoe2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StylishShoe2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

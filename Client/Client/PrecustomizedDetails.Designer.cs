@@ -30,6 +30,7 @@
         {
             this.gvMorePrecustomized = new System.Windows.Forms.DataGridView();
             this.lnkBack = new System.Windows.Forms.LinkLabel();
+            this.flPrecustomized = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.gvMorePrecustomized)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +54,19 @@
             this.lnkBack.Text = "Back";
             this.lnkBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkBack_LinkClicked);
             // 
+            // flPrecustomized
+            // 
+            this.flPrecustomized.Location = new System.Drawing.Point(41, 64);
+            this.flPrecustomized.Name = "flPrecustomized";
+            this.flPrecustomized.Size = new System.Drawing.Size(765, 325);
+            this.flPrecustomized.TabIndex = 2;
+            // 
             // Precustomized
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 721);
+            this.Controls.Add(this.flPrecustomized);
             this.Controls.Add(this.lnkBack);
             this.Controls.Add(this.gvMorePrecustomized);
             this.Name = "Precustomized";
@@ -73,5 +82,6 @@
 
         private System.Windows.Forms.DataGridView gvMorePrecustomized;
         private System.Windows.Forms.LinkLabel lnkBack;
+        private System.Windows.Forms.FlowLayoutPanel flPrecustomized;
     }
 }

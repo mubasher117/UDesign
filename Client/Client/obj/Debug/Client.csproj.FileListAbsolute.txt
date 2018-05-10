@@ -46,7 +46,6 @@ D:\UDesign\Client\Client\obj\Debug\Client.DesignerDesign.resources
 D:\UDesign\Client\Client\obj\Debug\Client.DesignerUpload.resources
 D:\UDesign\Client\Client\obj\Debug\Client.Home.resources
 D:\UDesign\Client\Client\obj\Debug\Client.Orders.resources
-D:\UDesign\Client\Client\obj\Debug\Client.ucDUpload.resources
 D:\UDesign\Client\Client\obj\Debug\Client.UserInfo.resources
 C:\Users\daimj\Desktop\UDesign\Client\Client\bin\Debug\Client.exe.config
 C:\Users\daimj\Desktop\UDesign\Client\Client\bin\Debug\Client.exe
